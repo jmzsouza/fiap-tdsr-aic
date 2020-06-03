@@ -1,0 +1,449 @@
+{
+  "intents": [
+    {
+      "intent": "compra_celular",
+      "examples": [
+        {
+          "text": "Quero comprar um celular"
+        },
+        {
+          "text": "Poderia me ajudar a adquirir um celular?"
+        },
+        {
+          "text": "Como eu faço pra comprar um celular?"
+        },
+        {
+          "text": "Desejo comprar um celular"
+        }
+      ],
+      "description": "Ajuda o cliente a escolher um celular e efetuar a compra deste."
+    },
+    {
+      "intent": "reserva_produto",
+      "examples": [
+        {
+          "text": "Quando o produto fica reservado?"
+        },
+        {
+          "text": "Tenho uma reserva de produto quando coloco o produto no carrinho?"
+        },
+        {
+          "text": "Posso reservar um produto?"
+        }
+      ],
+      "description": "Pergunta sobre reserva do produto"
+    },
+    {
+      "intent": "entrega_produto",
+      "examples": [
+        {
+          "text": "Quando meu produto vai ser entregue?"
+        },
+        {
+          "text": "Qual data vai chegar meu produto?"
+        },
+        {
+          "text": "Qual o prazo para a entrega?"
+        },
+        {
+          "text": "Quanto tempo demora para chegar o produto?"
+        },
+        {
+          "text": "Meu produto vai chegar quando?"
+        },
+        {
+          "text": "Quando vou receber o produto?"
+        },
+        {
+          "text": "O prazo para a entrega é de quantos dias?"
+        },
+        {
+          "text": "Quantos dias demoram para chegar o produto?"
+        }
+      ],
+      "description": "Pergunta sobre a entrega do produto."
+    }
+  ],
+  "entities": [
+    {
+      "entity": "cidade",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "salvador",
+          "synonyms": [
+            "terra de todos os santos",
+            "cidade da bahia",
+            "capital da bahia",
+            "capital da alegria"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "sao paulo",
+          "synonyms": [
+            "sampa",
+            "sp",
+            "terra da garoa"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "rio de janeiro",
+          "synonyms": [
+            "rio",
+            "rj",
+            "cidade maravilhosa"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "marcas_de_celular",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "azus",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "lenovo",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "iphone",
+          "synonyms": [
+            "apple",
+            "ios"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "motorola",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "xiaomi",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "samsung",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-currency",
+      "values": [],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "@marcas_celular",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Algum valor específico?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1585266323749",
+      "conditions": "@marcas_de_celular",
+      "dialog_node": "node_5_1585266529732"
+    },
+    {
+      "type": "standard",
+      "title": "@sys-corrency",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ahhh! veleza. Um celular no valor de @sys-corrency."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1585266529732",
+      "conditions": "@sys-currency",
+      "dialog_node": "node_10_1585266552014"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ah sim ! São 12 dias úteis."
+              },
+              {
+                "text": "Opaa! Em apenas 12 dias úteis após a confirmação de pagamento."
+              },
+              {
+                "text": "É rapidinho! Apenas 12 dias úteis!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_9_1582845922400",
+      "conditions": "@cidade:(rio de janeiro)",
+      "dialog_node": "node_5_1583448699427",
+      "previous_sibling": "node_5_1583448204630"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ah sim! São 15 dias úteis."
+              },
+              {
+                "text": "Opaa! Em apenas 15 dias úteis após a confirmação de pagamento."
+              },
+              {
+                "text": "É rapidinho! Apenas 15 dias úteis!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_9_1582845922400",
+      "conditions": "@cidade:salvador",
+      "dialog_node": "node_8_1583450625248",
+      "previous_sibling": "node_5_1583448699427"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ah sim! São 10 dias úteis!"
+              },
+              {
+                "text": "Opaa! Em apenas 10 dias úteis após a confirmação de pagamento."
+              },
+              {
+                "text": "É rapidinho! Apenas 10 dias úteis!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_9_1582845922400",
+      "conditions": "@cidade:(sao paulo)",
+      "dialog_node": "node_5_1583448204630"
+    },
+    {
+      "type": "standard",
+      "title": "entrega_produto",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Garantimos um prazo no máximo de 30 dias para a entrega do seu produto."
+              },
+              {
+                "text": "Opa! Seu produto chega em 30 dias após a confirmação de pagamento. "
+              },
+              {
+                "text": "É rapidinho! 30 dias. Ok?"
+              },
+              {
+                "text": "Varia de cidade para cidade! Pra qual cidade seria?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#entrega_produto",
+      "dialog_node": "node_9_1582845922400",
+      "previous_sibling": "node_9_1583451167984"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "title": "",
+            "options": [],
+            "response_type": "option"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_5_1583448699427"
+      },
+      "conditions": "#entrega_produto && @cidade:(rio de janeiro)",
+      "dialog_node": "node_2_1583449721440",
+      "previous_sibling": "node_6_1585266323749"
+    },
+    {
+      "type": "standard",
+      "title": "reserva_produto",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Não. O produto só é reservado após a finalização do pedido."
+              },
+              {
+                "text": "Opa. Não vai rolar. Precisa finalizar o pedido ae! Valeu!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#reserva_produto",
+      "dialog_node": "node_6_1582844839255",
+      "previous_sibling": "node_9_1582845922400"
+    },
+    {
+      "type": "standard",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_8_1583450625248"
+      },
+      "conditions": "#entrega_produto && @cidade:salvador",
+      "dialog_node": "node_9_1583451167984",
+      "previous_sibling": "node_5_1583449560691"
+    },
+    {
+      "type": "standard",
+      "title": "Em outros casos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu não entendi. Você pode tentar reformular a frase."
+              },
+              {
+                "text": "Você pode reformular sua afirmação? Eu não estou entendendo."
+              },
+              {
+                "text": "Eu não entendi o sentido."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Em outros casos",
+      "previous_sibling": "node_6_1582844839255",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "compra_celular",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Entendi. Você tem preferência em alguma marca?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#compra_celular",
+      "dialog_node": "node_6_1585266323749",
+      "previous_sibling": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_5_1583448204630"
+      },
+      "conditions": "#entrega_produto && @cidade:(sao paulo)",
+      "dialog_node": "node_5_1583449560691",
+      "previous_sibling": "node_2_1583449721440"
+    },
+    {
+      "type": "standard",
+      "title": "Bem-vindo",
+      "output": {
+        "generic": [
+          {
+            "title": "",
+            "options": [],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Bem-vindo"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "Você quis dizer:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "Nenhuma das anteriores"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Você quis dizer:"
+    }
+  },
+  "learning_opt_out": false,
+  "name": "Ajuda",
+  "language": "pt-br",
+  "description": "Essa skill ajuda o cliente a encontrar o melhor aparelho para ele."
+}

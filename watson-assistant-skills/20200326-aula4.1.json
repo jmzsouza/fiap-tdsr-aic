@@ -1,0 +1,370 @@
+{
+  "intents": [
+    {
+      "intent": "compra_de_celular",
+      "examples": [
+        {
+          "text": "você pode me ajudar a comprar um celular"
+        },
+        {
+          "text": "Quero comprar um celular"
+        },
+        {
+          "text": "qual é o melhor celular"
+        },
+        {
+          "text": "como eu faço para comprar um celular?"
+        },
+        {
+          "text": "compra de cel"
+        }
+      ],
+      "description": "O usuário gostaria de comprar"
+    },
+    {
+      "intent": "entrega_do_produto",
+      "examples": [
+        {
+          "text": "quanto tempo demora pra entregar?"
+        },
+        {
+          "text": "qual o prazo de entrega?"
+        },
+        {
+          "text": "quanto tempo demora pra entregar isso aí?"
+        },
+        {
+          "text": "QUANDO VAI CHEGAR"
+        },
+        {
+          "text": "qUANDO CHEGA"
+        },
+        {
+          "text": "eae em quanto tempo vai entrega pra mim?"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "localidade",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "salvador",
+          "synonyms": [
+            "capital da alegria",
+            "carnaval",
+            "ssa"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "sao paulo",
+          "synonyms": [
+            "sampa",
+            "sp",
+            "terra da garoa"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "rio de janeiro",
+          "synonyms": [
+            "rj",
+            "cidade maravilhosa"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-currency",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-date",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "marcas_de_celular",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "motorola",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "xiaomi",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "nokia",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "lenovo",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "iphone",
+          "synonyms": [
+            "apple",
+            "ios"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "samsung",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "azus",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ahhh beleza. Um celular no valor de @sys-currency."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1585265630469",
+      "conditions": "@sys-currency",
+      "dialog_node": "node_1_1585266168760"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Aí em Sampa são 10 dias!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1583517227978",
+      "conditions": "@localidade:(sao paulo)",
+      "dialog_node": "node_8_1583518113962",
+      "previous_sibling": "node_3_1585263655367"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "ô meu rei, aqui são 14 dias."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1583517227978",
+      "conditions": "@localidade:salvador",
+      "dialog_node": "node_3_1585263655367",
+      "previous_sibling": "node_10_1583518869493"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "No Rio são 12 dias!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1583517227978",
+      "conditions": "@localidade:(rio de janeiro)",
+      "dialog_node": "node_10_1583518869493"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "E você tem algum valor em mente?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1585265423098",
+      "conditions": "@marcas_de_celular",
+      "dialog_node": "node_6_1585265630469"
+    },
+    {
+      "type": "standard",
+      "title": "Em outros casos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu não entendi. Você pode tentar reformular a frase."
+              },
+              {
+                "text": "Você pode reformular sua afirmação? Eu não estou entendendo."
+              },
+              {
+                "text": "Eu não entendi o sentido."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Em outros casos",
+      "previous_sibling": "node_10_1583517227978",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Legal vou te ajudar. Você tem alguma preferência?"
+              },
+              {
+                "text": "Legal. Qual a marca de celular que você deseja?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#compra_de_celular",
+      "dialog_node": "node_9_1585265423098",
+      "previous_sibling": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "De onde voce é?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#entrega_do_produto",
+      "dialog_node": "node_10_1583517227978",
+      "previous_sibling": "node_4_1585262527201"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_10_1583518869493"
+      },
+      "conditions": "#entrega_do_produto && @localidade",
+      "dialog_node": "node_4_1585262527201",
+      "previous_sibling": "node_9_1585265423098"
+    },
+    {
+      "type": "standard",
+      "title": "Bem-vindo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Olá. Como posso te ajudar?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Bem-vindo"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "Você quis dizer:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "Nenhuma das anteriores"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Você quis dizer:"
+    }
+  },
+  "learning_opt_out": false,
+  "name": "E-COMMERCE_1TDSR",
+  "language": "pt-br",
+  "description": ""
+}
