@@ -1,0 +1,1783 @@
+{
+  "intents": [
+    {
+      "intent": "avaliar_saude",
+      "examples": [
+        {
+          "text": "saber sobre a saúde"
+        },
+        {
+          "text": "sinto algo errado com minha saúde"
+        },
+        {
+          "text": "sinto minha saúde estranha"
+        },
+        {
+          "text": "avaliar estado"
+        },
+        {
+          "text": "gostaria de realizar uma auto avaliação do estado de saúde"
+        },
+        {
+          "text": "minha saude"
+        },
+        {
+          "text": "queria avaliar minha saúde"
+        },
+        {
+          "text": "sim quero saber sobre a saude"
+        },
+        {
+          "text": "estou preocupado com minha saúde"
+        },
+        {
+          "text": "eu quero saber como está minha saúde"
+        },
+        {
+          "text": "gostaria de checar o meu estado de saúde"
+        },
+        {
+          "text": "me sinto ruim"
+        },
+        {
+          "text": "minha saúde"
+        },
+        {
+          "text": "não sei"
+        },
+        {
+          "text": "acho que estou doente"
+        },
+        {
+          "text": "quero saber se tenho"
+        },
+        {
+          "text": "tenho sintomas"
+        },
+        {
+          "text": "acho que estou com"
+        },
+        {
+          "text": "estou passando mal"
+        },
+        {
+          "text": "me sinto estranho"
+        },
+        {
+          "text": "quero tirar dúvidas sobre a saúde"
+        }
+      ],
+      "description": "Intenção de consultar o estado de saúde"
+    },
+    {
+      "intent": "conhecer_sintomas",
+      "examples": [
+        {
+          "text": "como fica alguem com"
+        },
+        {
+          "text": "como diagnosticar"
+        },
+        {
+          "text": "como identificar"
+        },
+        {
+          "text": "quais as reações"
+        },
+        {
+          "text": "quais são os sintomas"
+        },
+        {
+          "text": "o que sente uma pessoa com"
+        },
+        {
+          "text": "não sei se estou doente"
+        },
+        {
+          "text": "quero saber os sintomas"
+        },
+        {
+          "text": "corona"
+        },
+        {
+          "text": "covid-19"
+        }
+      ],
+      "description": "Intenção de conhecer os sintomas"
+    },
+    {
+      "intent": "prevenir_contagio",
+      "examples": [
+        {
+          "text": "isolamento"
+        },
+        {
+          "text": "O que posso fazer para não me contaminar?"
+        },
+        {
+          "text": "O que fazer para não ser infectado?"
+        },
+        {
+          "text": "Pode me instruir para eu não ser contaminado?"
+        },
+        {
+          "text": "tenho que usar máscara?"
+        },
+        {
+          "text": "como evito"
+        },
+        {
+          "text": "quero me prevenir"
+        },
+        {
+          "text": "como previno"
+        },
+        {
+          "text": "preciso usar luvas"
+        },
+        {
+          "text": "posso sair"
+        },
+        {
+          "text": "sobre a quarentena"
+        },
+        {
+          "text": "isolamento social"
+        },
+        {
+          "text": "manter distancia das pessoas"
+        },
+        {
+          "text": "como posso me prevenir de contágio?"
+        },
+        {
+          "text": "qual prevenção deve tomar"
+        }
+      ],
+      "description": "Intenção de prevenção de contágio"
+    },
+    {
+      "intent": "agradecimento",
+      "examples": [
+        {
+          "text": "muito obrigado"
+        },
+        {
+          "text": "vlw"
+        },
+        {
+          "text": "pode deixar"
+        },
+        {
+          "text": "só isso mesmo"
+        },
+        {
+          "text": "valeu"
+        },
+        {
+          "text": "tranquilo"
+        },
+        {
+          "text": "agradecido"
+        },
+        {
+          "text": "obrigado"
+        },
+        {
+          "text": "fecho"
+        },
+        {
+          "text": "grato"
+        },
+        {
+          "text": "suave"
+        }
+      ],
+      "description": "Intenção de agradecimento do usuário"
+    }
+  ],
+  "entities": [
+    {
+      "entity": "doenca",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "pressão alta",
+          "synonyms": [
+            "hipertensão",
+            "pressao"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "doença renal crônica",
+          "synonyms": [
+            "rins",
+            "rim",
+            "pielonefrite",
+            "cálculos renais",
+            "pedra nos rins",
+            "renal"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "doença respiratória crônica",
+          "synonyms": [
+            "pulmao",
+            "rinite",
+            "sinusite",
+            "bronquite",
+            "respiratoria",
+            "respiracao"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "doença cardíaca",
+          "synonyms": [
+            "coração",
+            "disritmia",
+            "palpitação",
+            "angina",
+            "artrose",
+            "aterosclerose",
+            "arterioesclerose",
+            "cardiomiopatia",
+            "cardiopatia",
+            "arterial periférica",
+            "endocardite",
+            "estenose",
+            "fibrilação atrial",
+            "infarto",
+            "pericardite",
+            "taquicardia",
+            "prolapso da válvula mitral",
+            "cardiaca"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "diabetes",
+          "synonyms": [
+            "ausencia de insulina",
+            "glicose elevada",
+            "açucar no sangue",
+            "diabetico"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "não possuo",
+          "synonyms": [
+            "não",
+            "não tenho"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "bem_e_mal",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "bem",
+          "synonyms": [
+            "ok",
+            "legal",
+            "boa",
+            "bacana",
+            "suave",
+            "tranquila",
+            "da hora",
+            "maravilhosa",
+            "otima",
+            "demais",
+            "excelente",
+            "satisfatoria"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "mal",
+          "synonyms": [
+            "ruim",
+            "péssima",
+            "zuada",
+            "ruizão",
+            "malzão",
+            "embaçada",
+            "estranha",
+            "pessimo",
+            "pessima",
+            "estranho",
+            "horrivel",
+            "zuaderrima",
+            "zuadona",
+            "acabada",
+            "dolorida"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-time",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sintoma",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "dor no peito",
+          "synonyms": [
+            "torax doendo",
+            "seios doem",
+            "peito"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "congestão nasal",
+          "synonyms": [
+            "nariz entupido"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "cansaço",
+          "synonyms": [
+            "falta de disposição",
+            "fadiga"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "febre",
+          "synonyms": [
+            "febre",
+            "to quente",
+            "to ardendo",
+            "to queimando",
+            "temperatura alta",
+            "sinto muito frio"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "dor de garganta",
+          "synonyms": [
+            "pigarro",
+            "irritação",
+            "ar seco",
+            "coceira",
+            "garganta arranhada",
+            "dificulda de engolir"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "mal estar em geral",
+          "synonyms": [
+            "fraqueza",
+            "tontura",
+            "moleza",
+            "mal estar",
+            "fraco",
+            "mole",
+            "tonto"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "dificuldade de respirar",
+          "synonyms": [
+            "dificuldade de respirar",
+            "falta de ar",
+            "pouco oxigenio",
+            "não consigo respirar direito",
+            "respiracao fraca"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "corrimento nasal",
+          "synonyms": [
+            "catarro",
+            "nariz escorrendo",
+            "coriza",
+            "resfriado"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "tosse",
+          "synonyms": [
+            "peitogueira",
+            "rouquidão",
+            "tossindo"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "dores no corpo",
+          "synonyms": [
+            "corpo dolorido",
+            "corpo"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sim_e_nao",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "sim",
+          "synonyms": [
+            "positivo",
+            "correto",
+            "afirmativo",
+            "certo",
+            "ok"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "nao",
+          "synonyms": [
+            "não",
+            "negativo",
+            "errado",
+            "nope"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sexo",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "feminino",
+          "synonyms": [
+            "fem",
+            "mulher",
+            "femea",
+            "menina"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "masculino",
+          "synonyms": [
+            "masc ",
+            "homem",
+            "macho",
+            "menino",
+            "mas"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-date",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "tempo",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "mais de 14 dia (s)",
+          "synonyms": [
+            "mais de 14 dia (s)",
+            "15 dias",
+            "16 dias",
+            "17 dias",
+            "18 dias",
+            "19 dias",
+            "20 dias",
+            "quinze dias",
+            "dezesseis dias",
+            "dezesete dias",
+            "dezoito dias",
+            "dezenove dias",
+            "vinte dias",
+            "3 semanas",
+            "4 semanas",
+            "tres semanas",
+            "quatro semanas",
+            "1 mes",
+            "duas semanas e meia",
+            "2 semanas e meia",
+            "vinte e cinco dias",
+            "25 dias",
+            "vinte e seis dias",
+            "26 dias",
+            "vinte e sete dias",
+            "27 dias",
+            "vinte e oito dias",
+            "28 dias",
+            "vinte e nove dias",
+            "29 dias",
+            "trinta dias",
+            "30 dias",
+            "um mes"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "8 a 14 dia (s)",
+          "synonyms": [
+            "8 dias",
+            "9 dias",
+            "10 dias",
+            "11 dias",
+            "12 dias",
+            "13 dias",
+            "14 dias",
+            "oito dias",
+            "nove dias",
+            "dez dias",
+            "onze dias",
+            "doze dias",
+            "treze dias",
+            "quatorze dias",
+            "uma semana e meia",
+            "1 semana e meia",
+            "duas semanas",
+            "2 semanas"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "hoje",
+          "synonyms": [
+            "hoje",
+            "agora",
+            "neste momento"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "1 a 7 dia (s)",
+          "synonyms": [
+            "ontem",
+            "anteontem",
+            "1 dia",
+            "2 dias",
+            "3 dias",
+            "4 dias",
+            "5 dias",
+            "6 dias",
+            "7 dias",
+            "1 semana",
+            "um dia",
+            "dois dias",
+            "tres dias",
+            "quatro dias",
+            "cinco dias",
+            "seis dias",
+            "sete dias",
+            "uma semana"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "idade",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "40 a 59 anos",
+          "synonyms": [
+            "40 anos",
+            "50 anos",
+            "quarenta anos",
+            "cinquenta anos",
+            "quarenta e quatro",
+            "44",
+            "cinquenta e cinco",
+            "55",
+            "quarenta",
+            "cinquenta",
+            "48 anos",
+            "56 anos"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "18 a 39 anos",
+          "synonyms": [
+            "dezoito anos",
+            "dezenove anos",
+            "vinte",
+            "vinte e dois",
+            "trinta",
+            "trinta e tres",
+            "18 anos",
+            "19 anos",
+            "22 anos",
+            "33 anos"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "mais de 60 anos",
+          "synonyms": [
+            "60 anos",
+            "70 anos",
+            "80 anos",
+            "90 anos",
+            "sessenta anos",
+            "setenta anos",
+            "oitenta anos",
+            "noventa anos",
+            "66",
+            "77",
+            "88",
+            "99",
+            "sessenta",
+            "setenta",
+            "oitenta",
+            "noventa"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "menor de 18 anos",
+          "synonyms": [
+            "menor de idade",
+            "17 anos",
+            "16 anos",
+            "15 anos",
+            "14 anos",
+            "13 anos",
+            "11 anos",
+            "10 anos",
+            "dezessete anos",
+            "dezesseis anos",
+            "quinze anos",
+            "quatorze anos",
+            "treze anos",
+            "doze anos",
+            "onze anos",
+            "dez anos"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok! Vamos por partes. Como está sua saúde nesse momento? "
+              },
+              {
+                "text": "Certo!  Vamos por partes. Qual é o estado de sua saúde hoje? "
+              },
+              {
+                "text": "Entendo!  Vamos por partes. Como você sente sua saúde nesse momento? "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "slot_3_1587667150042",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1587667150069",
+      "previous_sibling": "handler_4_1587667150069"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1587667150042",
+      "event_name": "filled",
+      "dialog_node": "handler_6_1587700804720",
+      "previous_sibling": "handler_6_1587667150069"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1587667150042",
+      "context": {
+        "bem_e_mal": "@bem_e_mal"
+      },
+      "conditions": "@bem_e_mal",
+      "event_name": "input",
+      "dialog_node": "handler_4_1587667150069"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_2_1587761848041",
+      "variable": "$doenca",
+      "dialog_node": "slot_8_1587858790332",
+      "previous_sibling": "slot_1_1587858532878"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_2_1587761848041",
+      "variable": "$sexo",
+      "dialog_node": "slot_1_1587858532878",
+      "previous_sibling": "slot_5_1587858247466"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_2_1587761848041",
+      "variable": "$tempo",
+      "dialog_node": "slot_17_1587761848047",
+      "previous_sibling": "response_20_1587761848047"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_2_1587761848041",
+      "variable": "$idade",
+      "dialog_node": "slot_5_1587858247466",
+      "previous_sibling": "slot_17_1587761848047"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "",
+            "options": [],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_2_1587761848041",
+      "disabled": true,
+      "conditions": "@sintoma",
+      "dialog_node": "response_20_1587761848047"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1587762763582",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1587762763602",
+      "previous_sibling": "handler_2_1587762763602"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1587762763582",
+      "context": {
+        "sintoma": "@sintoma"
+      },
+      "conditions": "@sintoma",
+      "event_name": "input",
+      "dialog_node": "handler_2_1587762763602"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok. Você informou que mal é o estado de sua saúde. Mas..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "title": "Qual o maior sintoma está sentindo?",
+            "options": [
+              {
+                "label": "Dificuldade de respirar",
+                "value": {
+                  "input": {
+                    "text": "dificuldade de respirar"
+                  }
+                }
+              },
+              {
+                "label": "Febre",
+                "value": {
+                  "input": {
+                    "text": "febre"
+                  }
+                }
+              },
+              {
+                "label": "Tosse",
+                "value": {
+                  "input": {
+                    "text": "tosse"
+                  }
+                }
+              },
+              {
+                "label": "Dor de garganta",
+                "value": {
+                  "input": {
+                    "text": "dor de garganta"
+                  }
+                }
+              },
+              {
+                "label": "Dor no peito",
+                "value": {
+                  "input": {
+                    "text": "dor no peito"
+                  }
+                }
+              },
+              {
+                "label": "Dores no corpo",
+                "value": {
+                  "input": {
+                    "text": "dores no corpo"
+                  }
+                }
+              },
+              {
+                "label": "Congestão nasal",
+                "value": {
+                  "input": {
+                    "text": "congestão nasal"
+                  }
+                }
+              },
+              {
+                "label": "Corrimento nasal",
+                "value": {
+                  "input": {
+                    "text": "corrimento nasal"
+                  }
+                }
+              },
+              {
+                "label": "Cansaço",
+                "value": {
+                  "input": {
+                    "text": "cansaço"
+                  }
+                }
+              },
+              {
+                "label": "Mal estar em geral",
+                "value": {
+                  "input": {
+                    "text": "mal estar em geral"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_1_1587701585877",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1587701585897",
+      "previous_sibling": "handler_9_1587701585897"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1587701585877",
+      "context": {
+        "sintoma": "@sintoma"
+      },
+      "conditions": "@sintoma",
+      "event_name": "input",
+      "dialog_node": "handler_9_1587701585897"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_10_1587666555157",
+      "variable": "$bem_e_mal",
+      "dialog_node": "slot_3_1587667150042",
+      "previous_sibling": "node_8_1587701535806"
+    },
+    {
+      "type": "frame",
+      "title": "5.2 - Estado de saúde diferente de BEM - Sintoma",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Entendo. Você está sentindo $sintoma."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_10_1587666555157",
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "@bem_e_mal != \"bem\"",
+      "dialog_node": "node_8_1587701535806",
+      "previous_sibling": "node_1_1587701396847"
+    },
+    {
+      "type": "standard",
+      "title": "5.1 - Estado BEM de saúde",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ótimo! Obrigado por contribuir. Não esqueça:"
+              },
+              {
+                "text": "- Lave as mãos frequentemente com água e sabão, ou higienize com álcool gel 70%."
+              },
+              {
+                "text": "- Cubra a boca e nariz com um lenço de papel ao tossir e espirrar e jogue no lixo após o uso, ou proteja com o antebraço (nunca com as mãos)."
+              },
+              {
+                "text": "- Evite locais com alglomeração de pessoas."
+              },
+              {
+                "text": "- Não compartilhe objetos de uso pessoal."
+              },
+              {
+                "text": "Em caso de dúvidas, ligue para o Disque Saúde 136 do Ministério da Saúde, ou procure uma unidade de saúde."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_10_1587666555157",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_7_1587755888679"
+      },
+      "conditions": "@bem_e_mal:bem",
+      "dialog_node": "node_1_1587701396847"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1587846647499",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1587846647504",
+      "previous_sibling": "handler_9_1587846647504"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1587846647499",
+      "context": {
+        "bem_e_mal": "@bem_e_mal"
+      },
+      "conditions": "@bem_e_mal",
+      "event_name": "input",
+      "dialog_node": "handler_9_1587846647504"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1587763168394",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1587763168399",
+      "previous_sibling": "handler_6_1587763168399"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1587763168394",
+      "context": {
+        "sintoma": "@sintoma"
+      },
+      "conditions": "@sintoma",
+      "event_name": "input",
+      "dialog_node": "handler_6_1587763168399"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Legal. E qual é o seu sexo?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_1_1587858532878",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1587858532884",
+      "previous_sibling": "handler_9_1587858532884"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1587858532878",
+      "context": {
+        "sexo": "@sexo"
+      },
+      "conditions": "@sexo",
+      "event_name": "input",
+      "dialog_node": "handler_9_1587858532884"
+    },
+    {
+      "type": "slot",
+      "parent": "node_4_1587761316932",
+      "variable": "$bem_e_mal",
+      "dialog_node": "slot_9_1587846647499",
+      "previous_sibling": "slot_1_1587762763582"
+    },
+    {
+      "type": "slot",
+      "parent": "node_4_1587761316932",
+      "variable": "$sintoma",
+      "dialog_node": "slot_1_1587762763582"
+    },
+    {
+      "type": "slot",
+      "parent": "node_4_1587759957732",
+      "variable": "$bem_e_mal",
+      "dialog_node": "slot_6_1587846596441",
+      "previous_sibling": "slot_4_1587763168394"
+    },
+    {
+      "type": "standard",
+      "title": "2.2 - Negação de que está mal",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_4_1587759957732",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_10_1587666555157"
+      },
+      "conditions": "@sim_e_nao:nao",
+      "dialog_node": "node_10_1587762557443",
+      "previous_sibling": "node_4_1587761316932"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "",
+            "options": [],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_4_1587759957732",
+      "disabled": true,
+      "dialog_node": "response_2_1587761175416",
+      "previous_sibling": "node_10_1587762557443"
+    },
+    {
+      "type": "slot",
+      "parent": "node_4_1587759957732",
+      "variable": "$sintoma",
+      "dialog_node": "slot_4_1587763168394",
+      "previous_sibling": "slot_1_1587761463078"
+    },
+    {
+      "type": "frame",
+      "title": "2.1 - Confirmação de que está mal",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_4_1587759957732",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1587761848041"
+      },
+      "conditions": "@sim_e_nao:sim",
+      "dialog_node": "node_4_1587761316932",
+      "previous_sibling": "slot_6_1587846596441"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_4_1587759957732",
+      "variable": "$resposta",
+      "dialog_node": "slot_1_1587761463078"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "Compreendo. O sintoma de $sintoma é o que você sente e está desde $tempo. Humm! E qual é a sua idade? Ex.: 21 anos.",
+            "options": [
+              {
+                "label": "Menor de 18 anos",
+                "value": {
+                  "input": {
+                    "text": "menor de 18 anos"
+                  }
+                }
+              },
+              {
+                "label": "18 a 39 anos",
+                "value": {
+                  "input": {
+                    "text": "18 a 39 anos"
+                  }
+                }
+              },
+              {
+                "label": "40 a 59 anos",
+                "value": {
+                  "input": {
+                    "text": "40 a 59 anos"
+                  }
+                }
+              },
+              {
+                "label": "Mais de 60 anos",
+                "value": {
+                  "input": {
+                    "text": "mais de 60 anos"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_5_1587858247466",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1587858247472",
+      "previous_sibling": "handler_1_1587858247472"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1587858247466",
+      "context": {
+        "idade": "@idade"
+      },
+      "conditions": "@idade",
+      "event_name": "input",
+      "dialog_node": "handler_1_1587858247472"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Humm. Você confirma que não está bem?"
+              },
+              {
+                "text": "Ahh. Você quer dizer que está mal?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_1_1587761463078",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1587761463083",
+      "previous_sibling": "handler_8_1587761463083"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1587761463078",
+      "context": {
+        "resposta": "@sim_e_nao"
+      },
+      "conditions": "@sim_e_nao",
+      "event_name": "input",
+      "dialog_node": "handler_8_1587761463083"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "Ah sim! Você já informou que está mal e que sente $sintoma desde $tempo e que a idade $idade e é do sexo $sexo. Por fim! Você possui alguma dessas doenças?",
+            "options": [
+              {
+                "label": "Diabetes",
+                "value": {
+                  "input": {
+                    "text": "diabetes"
+                  }
+                }
+              },
+              {
+                "label": "Doença Cardíaca",
+                "value": {
+                  "input": {
+                    "text": "doença cardíaca"
+                  }
+                }
+              },
+              {
+                "label": "Doença Renal Crônica",
+                "value": {
+                  "input": {
+                    "text": "doença renal crônica"
+                  }
+                }
+              },
+              {
+                "label": "Doença Respiratória Crônica",
+                "value": {
+                  "input": {
+                    "text": "doença respiratória crônica"
+                  }
+                }
+              },
+              {
+                "label": "Pressão Alta",
+                "value": {
+                  "input": {
+                    "text": "pressão alta"
+                  }
+                }
+              },
+              {
+                "label": "Não Possuo",
+                "value": {
+                  "input": {
+                    "text": "não possuo"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_8_1587858790332",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1587858790340",
+      "previous_sibling": "handler_7_1587858790340"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1587858790332",
+      "context": {
+        "doenca": "@doenca"
+      },
+      "conditions": "@doenca",
+      "event_name": "input",
+      "dialog_node": "handler_7_1587858790340"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "",
+            "options": [],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_8_1587701535806",
+      "disabled": true,
+      "conditions": "@sintoma",
+      "dialog_node": "response_6_1587701742658",
+      "previous_sibling": "node_2_1587761848041"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_8_1587701535806",
+      "variable": "$sintoma",
+      "dialog_node": "slot_1_1587701585877",
+      "previous_sibling": "response_6_1587701742658"
+    },
+    {
+      "type": "frame",
+      "title": "5.2.1 - Estado de saúde diferente de BEM - Tempo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Pronto! Agora já sei que você está $bem_e_mal e que sente $sintoma desde $tempo. Sua idade de $idade e é do sexo $sexo. Sei também que como doença sua resposta é: $doenca."
+              },
+              {
+                "text": "Bom avaliamos que é um Caso Improvável.\nBaseado em suas respostas, é provável que essa situação NÃO se enquadre como caso suspeito de doença pelo coronavirus (COVID-19)."
+              },
+              {
+                "text": "Mantenha as condutas de precaução e prevenção, praticando a etiqueta respiratória:\nAo se deslocar para uma unidade de saúde, siga as seguintes medidas de proteção individual e etiqueta respiratória:"
+              },
+              {
+                "text": "- Lave as mãos com frquência com água e sabão ou higienize com álcool gel 70%."
+              },
+              {
+                "text": "- Cubra a boca e nariz com um lenço de papel ao tossir e espirrar e jogue no lixo após o uso, ou proteja com o antebraço (nunca com as mãos)."
+              },
+              {
+                "text": "- Evite tocar nos olhos, nariz e boca com as mãos não lavadas."
+              },
+              {
+                "text": "- Evite locais com aglomeração de pessoas."
+              },
+              {
+                "text": "- Não compartilhe objetos de uso pessoal."
+              },
+              {
+                "text": "- Evite contato próximo com as pessoas resfriadas ou que estejam com sintomas  de gripe."
+              },
+              {
+                "text": "Em caso de dúvidas, ligue para o Disque Saúde 136 do Ministério da Saúde, ou procure uma unidade de saúde."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_8_1587701535806",
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_7_1587755888679"
+      },
+      "conditions": "@bem_e_mal != \"bem\"",
+      "dialog_node": "node_2_1587761848041"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1587846596441",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1587846596448",
+      "previous_sibling": "handler_1_1587846596448"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1587846596441",
+      "context": {
+        "bem_e_mal": "@bem_e_mal"
+      },
+      "conditions": "@bem_e_mal",
+      "event_name": "input",
+      "dialog_node": "handler_1_1587846596448"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "E há quanto tempo você sente esse sintoma?",
+            "options": [
+              {
+                "label": "Hoje",
+                "value": {
+                  "input": {
+                    "text": "hoje"
+                  }
+                }
+              },
+              {
+                "label": "1 a 7 dia (s)",
+                "value": {
+                  "input": {
+                    "text": "1 a 7 dia (s)"
+                  }
+                }
+              },
+              {
+                "label": "8 a 14 dia (s)",
+                "value": {
+                  "input": {
+                    "text": "8 a 14 dia (s)"
+                  }
+                }
+              },
+              {
+                "label": "Mais de 14 dia (s)",
+                "value": {
+                  "input": {
+                    "text": "mais de 14 dia (s)"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_17_1587761848047",
+      "event_name": "focus",
+      "dialog_node": "handler_19_1587761848047",
+      "previous_sibling": "handler_18_1587761848047"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_17_1587761848047",
+      "context": {
+        "tempo": "@tempo"
+      },
+      "conditions": "@tempo",
+      "event_name": "input",
+      "dialog_node": "handler_18_1587761848047"
+    },
+    {
+      "type": "standard",
+      "title": "8.2 - Não mais necessita de ajuda",
+      "parent": "node_7_1587755888679",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_6_1587671043376"
+      },
+      "conditions": "@sim_e_nao:nao",
+      "dialog_node": "node_3_1587756163796",
+      "previous_sibling": "node_7_1587756124997"
+    },
+    {
+      "type": "standard",
+      "title": "8.1 - Necessita de Nova Ajuda",
+      "parent": "node_7_1587755888679",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "Bem-vindo"
+      },
+      "conditions": "@sim_e_nao:sim",
+      "dialog_node": "node_7_1587756124997"
+    },
+    {
+      "type": "standard",
+      "title": "4 - Usuário inicializa indicando que está mal",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_8_1587701535806"
+      },
+      "conditions": "#avaliar_saude && @bem_e_mal:mal",
+      "dialog_node": "node_5_1587756733928",
+      "previous_sibling": "node_9_1587683509367"
+    },
+    {
+      "type": "frame",
+      "title": "2 - Usuario inicializa indicando o sintoma",
+      "output": {
+        "generic": []
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "@sintoma",
+      "dialog_node": "node_4_1587759957732",
+      "previous_sibling": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "6 - Conhecer os Sintomas",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Tudo bem! Vou falar falar dos sintomas."
+              },
+              {
+                "text": "A doença pelo coronavírus 2019 (Covid-19) é similar a uma \"gripe\". Geralmente é uma doença leve ou moderada, mas alguns casos podem ficar graves. Os sintomas mais comuns são: febre, tosse e/ou dificuldade para respirar."
+              },
+              {
+                "text": "Alguns pacientes podem apresentar cansaço, dores no corpo, mal estar em geral, congestão nasal, corrimento nasal, dor de garganta ou dor no peito."
+              },
+              {
+                "text": "Esses sintomas geralmente são leves e começam gradualmente."
+              },
+              {
+                "text": "Algumas pessoas são infectadas, mas não apresentam sintomas ou apresentam sintomas leves, quase que imperceptíveis."
+              },
+              {
+                "text": "A maioria das pessoas (cerca de 80%) se recupera da doença sem precisar de tratamento especial. Cerca de 1 em cada 6 pessoas que adoecem pelo COVID-19 podem apresentar a forma grave da doença."
+              },
+              {
+                "text": "Pessoas idosas e portadoras de certas condições crônicas como pressão alta, doenças cardiovasculares e diabetes, têm um maior risco de desenvolver a forma grave."
+              },
+              {
+                "text": "Pessoas com febre, tosse e dificuldade de respirar devem procurar atendimento médico imediato. Deve-es utilizar uma máscara como forma de prevenir a dispersão de gotículas respiratórias ao tossir, espirrar ou falar, combinando com a lavagem ou higienização das mãos. Após o atendimento, deve-se seguir as orientações médicas, evitando frequentar ambientes públicos ou mesmo de trabalho, buscando permanecer em casa até o desaparecimento dos sintomas. Isso irá prevenir a propagação de vírus e a ocorrência de novas infecções. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_7_1587755888679"
+      },
+      "conditions": "#conhecer_sintomas",
+      "dialog_node": "node_1_1587670862694",
+      "previous_sibling": "node_10_1587666555157"
+    },
+    {
+      "type": "frame",
+      "title": "5 - Avaliação do ESTADO de saúde",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Entendi. Você informa que $bem_e_mal é o estado de saúde."
+              },
+              {
+                "text": "Compreendi. Você informa que é: $bem_e_mal."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "#avaliar_saude",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_10_1587666555157",
+      "previous_sibling": "node_5_1587756733928"
+    },
+    {
+      "type": "standard",
+      "title": "7 - Dicas sobre Prevenção",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Tudo bem! A principal medida que devemos adotar é respeitar a quarentena nesse momento, evitar se expor desnecessariamente é a melhor prevenção, saindo apenas em caso de necessidade. É imprescindível que sejam adotadas medidas gerias de prevenção e etiqueta respiratória, tais como:"
+              },
+              {
+                "text": "- Lave regularmente e cuidadosamente as mãos com água e sabão, ou higienize-se com álcool-gel 70%. Dessa forma é possível eliminar os vírus que possam estar em suas mãos."
+              },
+              {
+                "text": "- Mantenha pelo menos 2 metros de distância entre você e qualquer pessoa que esteja tossindo ou espirrando. Dessa forma é possível diminuir o risco de respirar gotículas respiratórias que contenham vírus, se a pessoa estiver doente."
+              },
+              {
+                "text": "- Evite tocar nos olhos, nariz e boca com as mãos não lavadas. Dessa forma pode-se evitar que as mãos que estejam contaminadas possam transferir vírus para os olhos, nariz ou boca, deixando-o doente."
+              },
+              {
+                "text": "- Certifique-se de que você e as pessoas ao seu redor pratiquem uma boa etiqueta respiratória. Isso significa cobrir a boca e o nariz com o antebraço ou com um lenço descartável quando tossir ou espirrar. Em seguida, descarte o lenço usado  imediatamente. Dessa forma você proteje as pessoas ao seu redor contra vírus como resfriado, gripe e COVID-19."
+              },
+              {
+                "text": "- Manter ambientes bem ventilados e evitar o compartilhamente de objetos de uso pessoal, como talheres, pratos, copos ou garrafas. Com isso você contribui para evitar a disseminação de doenças respiratórias."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_7_1587755888679"
+      },
+      "conditions": "#prevenir_contagio",
+      "dialog_node": "node_2_1587709391179",
+      "previous_sibling": "node_1_1587670862694"
+    },
+    {
+      "type": "standard",
+      "title": "3 - Usuario inicializa indicando que está bem",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1587701396847"
+      },
+      "conditions": "#avaliar_saude && @bem_e_mal:bem",
+      "dialog_node": "node_9_1587683509367",
+      "previous_sibling": "node_4_1587759957732"
+    },
+    {
+      "type": "standard",
+      "title": "9 - Agradecimento",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok! Estamos a disposição para evetuais dúvidas."
+              },
+              {
+                "text": "Tudo bem!  É um prazer para nós ajudá-lo."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#agradecimento",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_6_1587671043376",
+      "previous_sibling": "node_7_1587755888679"
+    },
+    {
+      "type": "standard",
+      "title": "10 - Em outros casos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu não entendi. Você pode tentar reformular a frase."
+              },
+              {
+                "text": "Você pode reformular sua afirmação? Eu não estou entendendo."
+              },
+              {
+                "text": "Eu não entendi o sentido."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Em outros casos",
+      "previous_sibling": "node_6_1587671043376",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "8 - Ajuda Final",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Posso ajudar em algo mais?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "@sim_e_nao",
+      "dialog_node": "node_7_1587755888679",
+      "previous_sibling": "node_2_1587709391179"
+    },
+    {
+      "type": "standard",
+      "title": "1 - Bem-vindo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Olá! Como posso te ajudar?"
+              },
+              {
+                "text": "Oi!  O que você deseja?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Bem-vindo"
+    }
+  ],
+  "counterexamples": [
+    {
+      "text": "3 dias"
+    },
+    {
+      "text": "treze dias"
+    }
+  ],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "Você quis dizer:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "Nenhuma das anteriores"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Você quis dizer:"
+    }
+  },
+  "learning_opt_out": false,
+  "name": "COVID-19",
+  "language": "pt-br",
+  "description": "Auxiliar a pessoa a procurar um serviço de saúde caso seja necessário."
+}
