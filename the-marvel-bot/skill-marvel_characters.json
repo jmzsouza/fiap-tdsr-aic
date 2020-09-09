@@ -1,0 +1,4643 @@
+{
+  "intents": [
+    {
+      "intent": "agradecer",
+      "examples": [
+        {
+          "text": "agradecido"
+        },
+        {
+          "text": "de boas"
+        },
+        {
+          "text": "fecho"
+        },
+        {
+          "text": "grato"
+        },
+        {
+          "text": "obrigado"
+        },
+        {
+          "text": "pode deixar"
+        },
+        {
+          "text": "só agradece"
+        },
+        {
+          "text": "suave"
+        },
+        {
+          "text": "tranquilo"
+        },
+        {
+          "text": "valeu"
+        },
+        {
+          "text": "valeuzão"
+        },
+        {
+          "text": "vlw"
+        }
+      ],
+      "description": "Intenção de agradecimento do usuário"
+    },
+    {
+      "intent": "black_panter",
+      "examples": [
+        {
+          "text": "luke"
+        }
+      ],
+      "description": "Esta intenção foi criada apenas contornar o conflito no inicio do diálogo com a palavra \"quero\" na entidade @simenao"
+    },
+    {
+      "intent": "captain_marvel",
+      "examples": [
+        {
+          "text": "carol"
+        }
+      ],
+      "description": "Esta intenção foi criada apenas contornar o conflito no inicio do diálogo com a palavra \"quero\" na entidade @simenao"
+    },
+    {
+      "intent": "iron_man",
+      "examples": [
+        {
+          "text": "anthony"
+        }
+      ],
+      "description": "Esta intenção foi criada apenas contornar o conflito no inicio do diálogo com a palavra \"quero\" na entidade @simenao"
+    },
+    {
+      "intent": "saudar",
+      "examples": [
+        {
+          "text": "boa noite"
+        },
+        {
+          "text": "boa tarde"
+        },
+        {
+          "text": "bom dia"
+        },
+        {
+          "text": "como vai"
+        },
+        {
+          "text": "e aí"
+        },
+        {
+          "text": "oi"
+        },
+        {
+          "text": "oie"
+        },
+        {
+          "text": "olá"
+        },
+        {
+          "text": "tudo bem"
+        }
+      ],
+      "description": "Intenção de saudação do usuário"
+    },
+    {
+      "intent": "thanos",
+      "examples": [
+        {
+          "text": "dione"
+        }
+      ],
+      "description": "Esta intenção foi criada apenas contornar o conflito no inicio do diálogo com a palavra \"quero\" na entidade @simenao"
+    }
+  ],
+  "entities": [
+    {
+      "entity": "character",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "black_panter",
+          "synonyms": [
+            "black",
+            "boseman",
+            "chadwick",
+            "charles",
+            "cliente",
+            "damisa-sarki",
+            "gato",
+            "haramu-fal",
+            "leopardo",
+            "luke",
+            "negra",
+            "negro",
+            "onkwonko",
+            "orfão",
+            "pantera",
+            "prince",
+            "principe",
+            "rei dos mortos",
+            "t'chaka",
+            "t'challa",
+            "tiger",
+            "tigre",
+            "wakanda"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "captain_marvel",
+          "synonyms": [
+            "ace",
+            "ave",
+            "bang",
+            "binária",
+            "binary",
+            "brie",
+            "capitã",
+            "captain",
+            "carol",
+            " catherine",
+            "cheeseburger",
+            "danilovska",
+            "danvers",
+            "donovan",
+            "karolya",
+            "lady",
+            "larson",
+            "loira",
+            "marvel",
+            "miss",
+            "pássaro",
+            "senhora",
+            "sra. marvel",
+            "warbird",
+            "whiz"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "iron_man",
+          "synonyms": [
+            "aço",
+            "anthony",
+            "cavaleiro",
+            "cobalto",
+            "crimson",
+            "de aço",
+            "de peças",
+            "dínamo",
+            "dourado",
+            "downey ",
+            "dynamo",
+            "eddward",
+            "ferro",
+            "golden avenger",
+            "hogan",
+            "iron",
+            "lata",
+            "máquinas",
+            "martini",
+            "metal",
+            "peças",
+            "pierce",
+            "potts",
+            "randall",
+            "richard",
+            "robert",
+            "shellhead",
+            "stark",
+            "tetsujin",
+            "tin man",
+            "tony"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "thanos",
+          "synonyms": [
+            "avatar",
+            "brolin",
+            "careca",
+            "chins",
+            "da morte",
+            "dione",
+            "do mal",
+            "dominador",
+            "exilado",
+            "josh",
+            "justiceiro",
+            "lord",
+            "louco",
+            "master",
+            "mestre",
+            "overmaster",
+            "pai de todos",
+            "queixos",
+            "rex",
+            "supermestre",
+            "tanos",
+            "thanos",
+            "titan",
+            "vilão"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "dados",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "aliases",
+          "synonyms": [
+            "alcunhas",
+            "apelidos",
+            "apodo",
+            "cognomes",
+            "identidades",
+            "nicks",
+            "nomes",
+            "sobrenomes"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "autores",
+          "synonyms": [
+            "autor",
+            "compositor",
+            "compositores",
+            "criador",
+            "criadores",
+            "criou",
+            "cronistas",
+            "escreveu",
+            "escritor",
+            "escritores",
+            "fundador",
+            "fundadores",
+            "inventor",
+            "inventores",
+            "inventou"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "caracteristicas",
+          "synonyms": [
+            "altura",
+            "aparência",
+            "aspecto",
+            "aspectos",
+            "boca",
+            "cabelos",
+            "caracter",
+            "caracteres",
+            "corpo",
+            "estilo",
+            "estilos",
+            "faceta",
+            "facetas",
+            "física",
+            "físico",
+            "genero",
+            "jeito",
+            "maneira",
+            "mãos",
+            "modos",
+            "nariz",
+            "olhos",
+            "particularidade",
+            "particularidades",
+            "peculiaridades",
+            "personalidade",
+            "personalidades",
+            "pés",
+            "propriedade",
+            "propriedades",
+            "sexo",
+            "singularidades",
+            "traços"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "educacao",
+          "synonyms": [
+            "aprendeu",
+            "aprendizado",
+            "ciência",
+            "competência",
+            "conhecimento",
+            "cultura",
+            "disciplina",
+            "educação",
+            "ensinamento",
+            "ensino",
+            "escola",
+            "estudou",
+            "faculdade",
+            "formação",
+            "instrução",
+            "mentor",
+            "mentores",
+            "preparo",
+            "sabedoria"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "especie",
+          "synonyms": [
+            "casta",
+            "categoria",
+            "espécie",
+            "estirpe",
+            "e.t",
+            "extra",
+            "humano",
+            "natureza",
+            "terrestre",
+            "tipo"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "familia",
+          "synonyms": [
+            "ascendência",
+            "companheira",
+            "companheiro",
+            "conjuge",
+            "descendência",
+            "esposa",
+            "esposo",
+            "familiares",
+            "filha",
+            "filho",
+            "genealogia",
+            "irmã",
+            "irmão",
+            "linhagem",
+            "mãe",
+            "marido",
+            "pai",
+            "parentela",
+            "parentes",
+            "prima",
+            "primo",
+            "tia",
+            "tio"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "grupos",
+          "synonyms": [
+            "afiliação",
+            "afiliações",
+            "agrupamentos",
+            "amigos",
+            "associação",
+            "associações",
+            "bando",
+            "bandos",
+            "clãs",
+            "classes",
+            "colegas",
+            "equipes",
+            "facção",
+            "facções",
+            "grupo",
+            "ordem",
+            "time",
+            "times",
+            "tribo",
+            "tribos",
+            "turmas"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "inimigos",
+          "synonyms": [
+            "adversários",
+            "antagonistas",
+            "competidores",
+            "contraditores",
+            "inimigo",
+            "inimigos",
+            "oponentes",
+            "opositores",
+            "rivais",
+            "rival"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "local",
+          "synonyms": [
+            "berço",
+            "cidadania",
+            "localização",
+            "lugar",
+            "nacionalidade",
+            "nasceu",
+            "nascimento",
+            "natalidade",
+            "naturalidade",
+            "onde veio",
+            "país",
+            "pátria",
+            "região",
+            "terra",
+            "territorio",
+            "zona"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "ocupacoes",
+          "synonyms": [
+            "cargos",
+            "empregos",
+            "encargos",
+            "executa",
+            "executou",
+            "faz",
+            "fez",
+            "função",
+            "funções",
+            "negócios",
+            "ocupação",
+            "ocupações",
+            "ofícios",
+            "profissão",
+            "profissões"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "operacoes",
+          "synonyms": [
+            "ação",
+            "ações",
+            "afazeres",
+            "atividades",
+            "base",
+            "combates",
+            "interverção",
+            "interverções",
+            "manobras",
+            "movimentos",
+            "obras",
+            "operação",
+            "práticas",
+            "serviços",
+            "tarefas",
+            "trabalhos",
+            "treinamentos",
+            "treinos"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "origem",
+          "synonyms": [
+            "apareceu",
+            "biografia",
+            "começou",
+            "crônica",
+            "gênese",
+            "história",
+            "infância",
+            "iniciou",
+            "narração",
+            "narrativa",
+            "nascença",
+            "o que é",
+            "principiou",
+            "quem é",
+            "surgiu",
+            "tornou",
+            "veio a ser",
+            "vida",
+            "virou"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "poderes",
+          "synonyms": [
+            "aptidão",
+            "aptidões",
+            "atributos",
+            "capacidades",
+            "características",
+            "dom",
+            "dons",
+            "forças",
+            "habilidades",
+            "magias",
+            "poder",
+            "qualidades"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "trajes",
+          "synonyms": [
+            "acessorio",
+            "acessórios",
+            "aparelho",
+            "aparelhos",
+            "arma",
+            "armadura",
+            "armaduras",
+            "armas",
+            "dispositivos",
+            "equipamento",
+            "equipamentos",
+            "fardas",
+            "ferramenta",
+            "ferramentas",
+            "instrumentos",
+            "objetos",
+            "roupa",
+            "roupas",
+            "traje",
+            "uniforme",
+            "uniformes",
+            "veste",
+            "vestes",
+            "vestimentas",
+            "vestuário"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "universo",
+          "synonyms": [
+            "cosmo",
+            "espaço",
+            "galáxia",
+            "mundo",
+            "planeta",
+            "saga",
+            "sistema",
+            "solar"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "simenao",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "nao",
+          "synonyms": [
+            "apenas isso",
+            "bulhufas",
+            "coisa alguma",
+            "errado",
+            "errou",
+            "já conheço",
+            "já sei",
+            "nada",
+            "nadinha",
+            "não",
+            "não quero",
+            "não tenho",
+            "negativo",
+            "nem",
+            "nenhum",
+            "nenhuma",
+            "pavatina",
+            "sem interesse",
+            "so isso",
+            "to ligado",
+            "zero"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "sim",
+          "synonyms": [
+            "acertou",
+            "afirmativo",
+            "almejo",
+            "anseio",
+            "certeza",
+            "certo",
+            "claro",
+            "correto",
+            "de acordo",
+            "desejo",
+            "ok",
+            "positivo",
+            "quero",
+            "sempre",
+            "sim",
+            "tenho",
+            "tudo"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Em outros casos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Não compreedi a sua curiosidade."
+              },
+              {
+                "text": "Eu não entendi. Você poderia reformular a frase."
+              },
+              {
+                "text": "Eu não entendi o seu interesse."
+              },
+              {
+                "text": "Não compreendi. Você poderia especificar o seu interesse. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Em outros casos",
+      "previous_sibling": "node_4_1599158480346",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_116_1599158501756",
+      "context": {
+        "character": "@character"
+      },
+      "conditions": "@character",
+      "event_name": "input",
+      "dialog_node": "handler_117_1599158501756"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_116_1599158501756",
+      "event_name": "focus",
+      "dialog_node": "handler_118_1599158501756",
+      "previous_sibling": "handler_117_1599158501756"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_166_1599160625084",
+      "context": {
+        "character": "@character"
+      },
+      "conditions": "@character",
+      "event_name": "input",
+      "dialog_node": "handler_167_1599160625084"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_166_1599160625084",
+      "event_name": "focus",
+      "dialog_node": "handler_168_1599160625084",
+      "previous_sibling": "handler_167_1599160625084"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "\"\""
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1598803098659",
+      "conditions": "@character",
+      "event_name": "generic",
+      "dialog_node": "handler_3_1599163803486"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1599248802853",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1599248802858",
+      "previous_sibling": "handler_6_1599248802858"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1598814005044",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1598814005050",
+      "previous_sibling": "handler_6_1598814005050"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1599163649486",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1599163649514",
+      "previous_sibling": "handler_7_1599163649514"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1598814005044",
+      "context": {
+        "character": "@character"
+      },
+      "conditions": "@character",
+      "event_name": "input",
+      "dialog_node": "handler_6_1598814005050"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1599248802853",
+      "context": {
+        "character": "@character"
+      },
+      "conditions": "@character",
+      "event_name": "input",
+      "dialog_node": "handler_6_1599248802858"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_66_1599154104991",
+      "context": {
+        "character": "@character"
+      },
+      "conditions": "@character",
+      "event_name": "input",
+      "dialog_node": "handler_67_1599154104991"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_66_1599154104991",
+      "event_name": "focus",
+      "dialog_node": "handler_68_1599154104991",
+      "previous_sibling": "handler_67_1599154104991"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "$character"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_11_1598738849037",
+      "conditions": "@character",
+      "event_name": "generic",
+      "dialog_node": "handler_7_1598807997638"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1599163649486",
+      "context": {
+        "character": "@simenao"
+      },
+      "conditions": "@simenao",
+      "event_name": "input",
+      "dialog_node": "handler_7_1599163649514"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_98_1599158501756",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_69_1599158501750"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_100_1599158501756",
+      "previous_sibling": "node_99_1599158501756"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Legal! Suas bases de operações são: Torre Stark, Cidade de Nova York, Nova York; Indústria Stark Aeródromo, Nova Jersey; anteriormente Ilha Stark, São Francisco, Califórnia; Troy; aleria Envidraça de Tony Stark, Cidade de Nova York, Nova York; Mansão dos Vingadores, Cidade de Nova York, Nova York; Vingadores Composto; QG do Resilente Seattle, Washington; também tem casas em Alexandria, Virgínia, Seattle, Washington e Los Angeles, Califórnia."
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": "Que tal sobre a origem dele. Você quer saber?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_69_1599158501750",
+      "conditions": "@dados:operacoes",
+      "dialog_node": "node_101_1599158501756",
+      "previous_sibling": "node_98_1599158501756"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Universo Marvel, Terra-616"
+              },
+              {
+                "text": "Ei! Ela possui outros codnomes. Quer saber mais?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1598732408621",
+      "conditions": "@dados:universo",
+      "dialog_node": "node_10_1598810636246",
+      "previous_sibling": "node_9_1598810616062"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_5_1599144024714",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_10_1599146390773"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_10_1599145994756"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Legal! Suas bases de operações são: Estação Espacial de Órbita Baixa Tropa Alfa; anteriormente Torre dos Vingadores, Manhattan, Cidade de Nova York, Nova York; nave não identificada; Aeroporta-Aviões da S.H.I.E.L.D.; anteriormente Washington DC; Mansão dos Vingadores, Manhattan, Cidade de Nova York, Nova York; Seattle, Washington; móvel na Galáxia Shi'ar a bordo da nave dos Piratas Siderais; [Escola para Jovens Super Dotados do Professor Xavier]], Centro de Salem, Condado de Westchester, Nova York; Dimensão do Libo; São Francisco, Califórnia; Cabo Canaveral, Flórida; Sede da CIA, Langley, Virginia; Boston, Massachusetts"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": "Que tal sobre a origem dela. Você quer saber?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1598732408621",
+      "conditions": "@dados:operacoes",
+      "dialog_node": "node_10_1599146390773",
+      "previous_sibling": "node_5_1599144024714"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_6_1598810575293",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1599144024714"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_10_1599152400893"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_169_1599186561821",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_11_1598738849037"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_10_1599190269095",
+      "previous_sibling": "node_2_1599190267248"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_101_1599158501756",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_104_1599158501756"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_102_1599158501756"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_101_1599158501756",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_69_1599158501750"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_103_1599158501756",
+      "previous_sibling": "node_102_1599158501756"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Certo! Tony Stark é o filho adotivo do industrial e fabricante de armas Howard Stark e sua esposa, Maria. Tony cresceu como um gênio com uma mente brilhante para tecnologia e invenções e, naturalmente, seguiu os passos de seu pai, herdando as Indústrias Stark após a morte prematura de seus pais. Tony projetou muitas armas de guerra para as Indústrias Stark.  Durante um conflito no Vietnã agora deslocado para o Afeganistão, Stark foi capturado por terroristas e, com um pedaço de estilhaços em seu coração, estava prestes a morrer. Construindo uma armadura de ferro que também iria ajudar com sua recuperação, Stark saiu do cativeiro e viajou de volta para casa para os Estados Unidos onde ele construiu um terno avançado de armadura e tornar-se o super-herói blindado: Homem de Ferro."
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": "Ah! Agora garanto que queira saber quais os seus poderes. Correto?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_69_1599158501750",
+      "conditions": "@dados:origem",
+      "dialog_node": "node_104_1599158501756",
+      "previous_sibling": "node_101_1599158501756"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_104_1599158501756",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_107_1599158501756"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_105_1599158501756"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_104_1599158501756",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_69_1599158501750"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_106_1599158501756",
+      "previous_sibling": "node_105_1599158501756"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Bom... os seus poderes são: Sentidos aguçados, Força sobre-humana, Regeneração e Inteligência gênia."
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": "Bom! Você também tem curiosidades sobre como é o trajes, armaduras e armas?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_69_1599158501750",
+      "conditions": "@dados:poderes",
+      "dialog_node": "node_107_1599158501756",
+      "previous_sibling": "node_104_1599158501756"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_107_1599158501756",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_110_1599158501756"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_108_1599158501756"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_107_1599158501756",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_69_1599158501750"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_109_1599158501756",
+      "previous_sibling": "node_108_1599158501756"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Humm! Seu traje é a Armadura de Ferro. A principal arma contida em cada traje, os raios repulsores, os jatos de reforço do traje permitem a Stark voar rápido mais rapidamente do que qualquer caça a jato. O capacete do Homem de Ferro fornece a Tony um display heads-up que lhe dá uma visão de 360 ​​graus, acesso a informações sobre seus arredores e inimigos, e a capacidade de transmitir e bloquear transmissões em qualquer frequência. O capacete também dá a Tony um grau de resistência a ataques baseados em EMP e psíquicos. Uma arma centrada no peito do Homem de Ferro, o unibeam é capaz de projetar uma luz deslumbrante que é ainda mais poderoso do que o raio repulsor. "
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": "Enfim! Quer conhecer de qual universo ele pertence?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_69_1599158501750",
+      "conditions": "@dados:trajes",
+      "dialog_node": "node_110_1599158501756",
+      "previous_sibling": "node_107_1599158501756"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_110_1599158501756",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_113_1599158501756"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_111_1599158501756"
+    },
+    {
+      "type": "frame",
+      "title": "Saudação",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Oi! Sou o Marv. Fala-me qual o personagem quer ter informações?"
+              },
+              {
+                "text": "Olá! Sou o Marv. Sobre qual o personagem tem curiosidade?"
+              },
+              {
+                "text": "Oie! Sou o Marv. Qual o personagem é do seu interesse?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#saudar",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_11_1598738849037",
+      "previous_sibling": "node_1_1598808274250"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_10_1599146390773",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_8_1598810605095"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_11_1599146390776"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_110_1599158501756",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_69_1599158501750"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_112_1599158501756",
+      "previous_sibling": "node_111_1599158501756"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Universo Marvel, Terra-616"
+              },
+              {
+                "text": "Ei! Ele possui outros codnomes. Quer saber mais?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_69_1599158501750",
+      "conditions": "@dados:universo",
+      "dialog_node": "node_113_1599158501756",
+      "previous_sibling": "node_110_1599158501756"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_113_1599158501756",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_71_1599158501756"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_114_1599158501756"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_113_1599158501756",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_69_1599158501750"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_115_1599158501756",
+      "previous_sibling": "node_114_1599158501756"
+    },
+    {
+      "type": "frame",
+      "title": "Captain Marvel",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok! O que mais quer saber sobre a Capitã Marvel?"
+              },
+              {
+                "text": "Certo! Qual curiosidade a mais que queira saber sobre a Capitã Marvel?"
+              },
+              {
+                "text": "Legal! Qual o interesse a mais sobre a Capitã Marvel?"
+              },
+              {
+                "text": "Ahh! Que informação a mais deseja sobre a Capitã Marvel?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "@character:captain_marvel",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_1_1598732408621",
+      "previous_sibling": "node_11_1598738849037"
+    },
+    {
+      "type": "frame",
+      "title": "Diálogo encerrado",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Tudo bem, prazer compartilhar curiosidades sobre o seu personagem. Volte quando desejar!"
+              },
+              {
+                "text": "Sem problemas! honra em lhe dar informações sobre o seu personagem. Retorne quando querer!"
+              },
+              {
+                "text": "Relaxa! Satisfação em transmitir dados sobre o seu personagem. Volte quando quiser!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "@simenao:nao",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_1_1598803098659",
+      "previous_sibling": "node_119_1599160625080"
+    },
+    {
+      "type": "standard",
+      "title": "Bem-Vindo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Olá! Sou o Marv. Como posso te ajudar?"
+              },
+              {
+                "text": "Oi! Sou o Marv. O que você deseja?"
+              },
+              {
+                "text": "Oie! Sou o Marv. Em que posso ser útil?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "node_1_1598808274250"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_1_1598732408621",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1598803098659"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_1_1598810493435",
+      "previous_sibling": "slot_2_1598814005044"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ah! Os autores são: Roy Thomas, Gene Colan"
+              },
+              {
+                "text": "Quer conhecer quais as características da Capitã Marvel?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1598732408621",
+      "conditions": "@dados:autores",
+      "dialog_node": "node_1_1599141531705",
+      "previous_sibling": "node_2_1598810522871"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_2_1598810522871",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1599141531705"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_1_1599147227724"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_40_1598817106661",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1598732408621"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_1_1599151581827",
+      "previous_sibling": "node_4_1599151579060"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_4_1598810554990",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1598732408621"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_1_1599151729764",
+      "previous_sibling": "node_6_1599151726982"
+    },
+    {
+      "type": "frame",
+      "title": "Thanos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok! O que mais quer saber sobre o Thanos?"
+              },
+              {
+                "text": "Certo! Qual curiosidade a mais que queira saber sobre o Thanos?"
+              },
+              {
+                "text": "Legal! Qual o interesse a mais sobre o Thanos?"
+              },
+              {
+                "text": "Ahh! Que informação a mais deseja sobre o Thanos?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "@character:thanos",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_119_1599160625080",
+      "previous_sibling": "node_69_1599158501750"
+    },
+    {
+      "type": "frame",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_119_1599160625080",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1598803098659"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_120_1599160625084",
+      "previous_sibling": "slot_166_1599160625084"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Então... o Thanos também é conhecido como: O Titã Louco, Avatar da Morte, Queixos, Amante da Morte, Pai de Todos, Dione (nome escolhido para antes de seu nascimento), Mestre, Thanos Rex, Chins, Dominador, O exilado, justiceiro (em outra linha do tempo)."
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": "Tem curiosidade de saber quem são os seus autores?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_119_1599160625080",
+      "conditions": "@dados:aliases",
+      "dialog_node": "node_121_1599160625084",
+      "previous_sibling": "node_120_1599160625084"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_10_1599146390773",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1598732408621"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_12_1599146390776",
+      "previous_sibling": "node_11_1599146390776"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_121_1599160625084",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_124_1599160625084"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_122_1599160625084"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_121_1599160625084",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_119_1599160625080"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_123_1599160625084",
+      "previous_sibling": "node_122_1599160625084"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ah! Os autores são: Jim Starlin, Mike Friedrich"
+              },
+              {
+                "text": "Quer conhecer quais as características do Thanos?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_119_1599160625080",
+      "conditions": "@dados:autores",
+      "dialog_node": "node_124_1599160625084",
+      "previous_sibling": "node_121_1599160625084"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_124_1599160625084",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_127_1599160625084"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_125_1599160625084"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_124_1599160625084",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_119_1599160625080"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_126_1599160625084",
+      "previous_sibling": "node_125_1599160625084"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Sexo: Masculino\nAltura: 2,15 m\nPeso: 447 kg\nOlhos: Vermelhor\nCabelo: Não Possui\nPele: Roxa\nAtributos Incomuns: Queixo enrugado"
+              },
+              {
+                "text": "Olha eu tenho a informação da formação que ele tem. Quer saber?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_119_1599160625080",
+      "conditions": "@dados:caracteristicas",
+      "dialog_node": "node_127_1599160625084",
+      "previous_sibling": "node_124_1599160625084"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_127_1599160625084",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_130_1599160625084"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_128_1599160625084"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_127_1599160625084",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_119_1599160625080"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_129_1599160625084",
+      "previous_sibling": "node_128_1599160625084"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ohh! como parte de sua educação, tem: Tutelado por Mentor (Pai), formado no sistema educacional Titan"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": "Tem interesse em saber qual é espécie dele?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_119_1599160625080",
+      "conditions": "@dados:educacao",
+      "dialog_node": "node_130_1599160625084",
+      "previous_sibling": "node_127_1599160625084"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_130_1599160625084",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_133_1599160625084"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_131_1599160625084"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Sexo: Feminina\nAltura: 1.80 m\nPeso: 75 kg\nOlhos: Azuis\nCabelo: Loira"
+              },
+              {
+                "text": "Olha eu tenho a informação de formação que ela tem. Quer saber?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1598732408621",
+      "conditions": "@dados:caracteristicas",
+      "dialog_node": "node_13_1599147676584",
+      "previous_sibling": "node_1_1599141531705"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_130_1599160625084",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_119_1599160625080"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_132_1599160625084",
+      "previous_sibling": "node_131_1599160625084"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ahh! Eterno de titã. Divergente híbrido."
+              },
+              {
+                "text": "Quer conhecer quem são os seus parentes?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_119_1599160625080",
+      "conditions": "@dados:especie",
+      "dialog_node": "node_133_1599160625084",
+      "previous_sibling": "node_130_1599160625084"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_133_1599160625084",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_136_1599160625084"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_134_1599160625084"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_133_1599160625084",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_119_1599160625080"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_135_1599160625084",
+      "previous_sibling": "node_134_1599160625084"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Olha... os parentes conhecidos são: A'Lars (pai); Sui-San (mãe, morta); Eros (irmão); Uranos (tio-avô); Kronos (avô paterno, morto); Daina (avó paterna, morta); Zuras (tio, morto); Thena (prima); Sersi (prima); Gamora (filha adotiva); Nebulosa (suposta neta); Podridão (\"filho\" com a Morte); Thane (filho); Inúmeros filhos (mortos)."
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": "E os grupos que ele faz parte. Você tem interesse?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_119_1599160625080",
+      "conditions": "@dados:familia",
+      "dialog_node": "node_136_1599160625084",
+      "previous_sibling": "node_133_1599160625084"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_136_1599160625084",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_139_1599160625084"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_137_1599160625084"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_136_1599160625084",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_119_1599160625080"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_138_1599160625084",
+      "previous_sibling": "node_137_1599160625084"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thanos possui afiliações com:  Líder da Ordem Negra; Anteriormente Cabala, líder da Ordem Negra, aliado do Zodíaco; Antigamente Guarda do Infinito, Defensores, Secto Niilista, inúmeros exércitos."
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": "Agora que você já sabe quem são os amigos. Que tal conhecer seu inimigos?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_119_1599160625080",
+      "conditions": "@dados:grupos",
+      "dialog_node": "node_139_1599160625084",
+      "previous_sibling": "node_136_1599160625084"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_139_1599160625084",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_142_1599160625084"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_140_1599160625084"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_139_1599160625084",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_119_1599160625080"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_141_1599160625084",
+      "previous_sibling": "node_140_1599160625084"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_13_1599147676584",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_3_1598810539008"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_14_1599147676588"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eita! Os seus inimigos incluem quase todos os super-heróis existentes."
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": "Talvez você já saiba, mas quer saber onde ele nasceu?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_119_1599160625080",
+      "conditions": "@dados:inimigos",
+      "dialog_node": "node_142_1599160625084",
+      "previous_sibling": "node_139_1599160625084"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_142_1599160625084",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_145_1599160625084"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_143_1599160625084"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_142_1599160625084",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_119_1599160625080"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_144_1599160625084",
+      "previous_sibling": "node_143_1599160625084"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Seu local de origem é Colônia eterna, Titã (lua de Saturno)."
+              },
+              {
+                "text": "Sabia que ele tem várias ocupações. Quer saber?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_119_1599160625080",
+      "conditions": "@dados:local",
+      "dialog_node": "node_145_1599160625084",
+      "previous_sibling": "node_142_1599160625084"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_145_1599160625084",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_148_1599160625084"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_146_1599160625084"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_145_1599160625084",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_119_1599160625080"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_147_1599160625084",
+      "previous_sibling": "node_146_1599160625084"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ah sim! Conquistador, adorador da Morte; anteriormente pirata, niilista, deus, buscador de conhecimento, Rei de Titã."
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": "Bom, você quer saber quais as suas bases de operações que ele também faz parte?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_119_1599160625080",
+      "conditions": "@dados:ocupacoes",
+      "dialog_node": "node_148_1599160625084",
+      "previous_sibling": "node_145_1599160625084"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_148_1599160625084",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_151_1599160625084"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_149_1599160625084"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_148_1599160625084",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_119_1599160625080"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_150_1599160625084",
+      "previous_sibling": "node_149_1599160625084"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Legal! Suas bases de operações são: Anteriormente Mundo Bélico, Terra-15513; Terra-1610; Necrópole, Wakanda, Terra, Terra-616; Santuário II, Titã, Terra-616."
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": "Que tal sobre a origem dele. Você quer saber?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_119_1599160625080",
+      "conditions": "@dados:operacoes",
+      "dialog_node": "node_151_1599160625084",
+      "previous_sibling": "node_148_1599160625084"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_13_1599147676584",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1598732408621"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_15_1599147676588",
+      "previous_sibling": "node_14_1599147676588"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_151_1599160625084",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_154_1599160625084"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_152_1599160625084"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_151_1599160625084",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_119_1599160625080"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_153_1599160625084",
+      "previous_sibling": "node_152_1599160625084"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Certo! Desde seu nascimento na lua de Titã em Saturno, Thanos sempre foi um estranho. Ele carrega um gene Deviants, que causa sua aparência horrível e deformada, com pele roxa e áspera. Ele nasceu entre os últimos filhos dos colonos originais de Titã: Mentor e Sui-San. Sua mãe, chocada ao ver um bebê tão feio e sentindo seu potencial para o mal, tentou matar Thanos ao nascer, embora tenha sido impedida por seu pai, A'Lars, também conhecido como Mentor. Thanos mais tarde a matou por esta tentativa. Thanos também tem um irmão, Starfox (também conhecido como Eros), de quem ele sempre teve ciúmes, já que Starfox era bonito e popular. Ainda assim, Thanos é um Eterno, um tipo de super-humano que, de acordo com os Celestiais, deveria ser um protetor da Terra. E, com uma mente distorcida, ele levou seu dever cósmico a sério."
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": "Ah! Agora garanto que queira saber quais os seus poderes. Correto?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_119_1599160625080",
+      "conditions": "@dados:origem",
+      "dialog_node": "node_154_1599160625084",
+      "previous_sibling": "node_151_1599160625084"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_154_1599160625084",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_157_1599160625084"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_155_1599160625084"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_154_1599160625084",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_119_1599160625080"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_156_1599160625084",
+      "previous_sibling": "node_155_1599160625084"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Bom... os seus poderes são: Super força ilimitada, Velocidade Sobre - Humana, Durabilidade Sobre - Humana, Vigor Sobre - Humano, Agilidade Sobre - Humana, Reflexos Sobre - Humana, Invunerabilidade extrema um dos mais resistentes da Marvel, Fator de Cura Acelerado, Manipulação de Energia, Imortalidade, Intelegência Sobre - Humana, Lider Eficaz, Conhecimento Místico, Desarmado Perfeito, intelecto superior, Absorção de qualquer tipo de energia."
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": "Bom! Você também tem curiosidades sobre como é o trajes, armaduras e armas?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_119_1599160625080",
+      "conditions": "@dados:poderes",
+      "dialog_node": "node_157_1599160625084",
+      "previous_sibling": "node_154_1599160625084"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_157_1599160625084",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_160_1599160625084"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_158_1599160625084"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_157_1599160625084",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_119_1599160625080"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_159_1599160625084",
+      "previous_sibling": "node_158_1599160625084"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Humm! Seu traje é  a Armadura nas cores Dourado e Azul. Possui também a arma imponente e porta a manopla do infinito que unindo as seis jóias (poder, espaço, tempo, realidade, alma, mente) torna o seu portador um deus onipotente, onipresente e onisciente."
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": "Enfim! Quer conhecer de qual universo ele pertence?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_119_1599160625080",
+      "conditions": "@dados:trajes",
+      "dialog_node": "node_160_1599160625084",
+      "previous_sibling": "node_157_1599160625084"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_160_1599160625084",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_163_1599160625084"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_161_1599160625084"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Poxa! Não consegui compreender seu interesse sobre a Capitã Marvel.\n\nInforme \"SIM\" para continuar com este personagem, caso contrário, informe \"NÃO\" para outro personagem."
+              },
+              {
+                "text": "Que pena! Não entendi sua curiosidade sobre a Capitã Marvel.\n\nInforme \"SIM\" para continuar com este personagem, caso contrário, informe \"NÃO\" para outro personagem."
+              },
+              {
+                "text": "Nossa! Não compreendi seu desejo a respeito da Capitã Marvel.\n\nInforme \"SIM\" para continuar com este personagem, caso contrário, informe \"NÃO\" para outro personagem."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_1_1598732408621",
+      "conditions": "$character:captain_marvel",
+      "dialog_node": "node_16_1599150167816",
+      "previous_sibling": "node_10_1598810636246"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_160_1599160625084",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_119_1599160625080"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_162_1599160625084",
+      "previous_sibling": "node_161_1599160625084"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Universo Marvel, Terra-616"
+              },
+              {
+                "text": "Ei! Ele possui outros codnomes. Quer saber mais?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_119_1599160625080",
+      "conditions": "@dados:universo",
+      "dialog_node": "node_163_1599160625084",
+      "previous_sibling": "node_160_1599160625084"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_163_1599160625084",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_121_1599160625084"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_164_1599160625084"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_163_1599160625084",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_119_1599160625080"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_165_1599160625084",
+      "previous_sibling": "node_164_1599160625084"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Poxa! Não consegui compreender seu interesse sobre o Pantera Negra.\n\nInforme \"SIM\" para continuar com este personagem, ou, informe \"NÃO\" para outro personagem"
+              },
+              {
+                "text": "Que pena! Não entendi sua curiosidade sobre o Pantera Negra.\n\nInforme \"SIM\" para continuar com este personagem, ou, informe \"NÃO\" para outro personagem"
+              },
+              {
+                "text": "Nossa! Não compreendi seu desejo a respeito do Pantera Negra.\n\nInforme \"SIM\" para continuar com este personagem, ou, informe \"NÃO\" para outro personagem"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_19_1599154104985",
+      "conditions": "$character:black_panter",
+      "dialog_node": "node_169_1599186561821",
+      "previous_sibling": "node_63_1599154104991"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Poxa! Não consegui compreender seu interesse sobre o Homem de Ferro.\n\nInforme \"SIM\" para continuar com este personagem, ou, informe \"NÃO\" para outro personagem"
+              },
+              {
+                "text": "Que pena! Não entendi sua curiosidade sobre o Homem de Ferro.\n\nInforme \"SIM\" para continuar com este personagem, ou, informe \"NÃO\" para outro personagem"
+              },
+              {
+                "text": "Nossa! Não compreendi seu desejo a respeito do Homem de Ferro.\n\nInforme \"SIM\" para continuar com este personagem, ou, informe \"NÃO\" para outro personagem"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_69_1599158501750",
+      "conditions": "$character:iron_man",
+      "dialog_node": "node_17_1599150413426",
+      "previous_sibling": "node_113_1599158501756"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Poxa! Não consegui compreender seu interesse sobre o Thanos.\n\nInforme \"SIM\" para continuar com este personagem, ou, informe \"NÃO\" para outro personagem."
+              },
+              {
+                "text": "Que pena! Não entendi sua curiosidade sobre o Thanos.\n\nInforme \"SIM\" para continuar com este personagem, ou, informe \"NÃO\" para outro personagem."
+              },
+              {
+                "text": "Nossa! Não compreendi seu desejo a respeito do Thanos.\n\nInforme \"SIM\" para continuar com este personagem, ou, informe \"NÃO\" para outro personagem."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_119_1599160625080",
+      "conditions": "$character:thanos",
+      "dialog_node": "node_18_1599150479592",
+      "previous_sibling": "node_163_1599160625084"
+    },
+    {
+      "type": "frame",
+      "title": "Black Panter",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok! O que mais quer saber sobre o Pantera Negra?"
+              },
+              {
+                "text": "Certo! Qual curiosidade a mais que queira saber sobre o Pantera Negra?"
+              },
+              {
+                "text": "Legal! Qual o interesse a mais sobre o Pantera Negra?"
+              },
+              {
+                "text": "Ahh! Que informação a mais deseja sobre o Pantera Negra?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "@character:black_panter",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_19_1599154104985",
+      "previous_sibling": "node_1_1598732408621"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_19_1599154104985",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1598803098659"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_20_1599154104990",
+      "previous_sibling": "slot_66_1599154104991"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Então... o Pantera Negra também é conhecido como: Luke Charles, Leopardo negro, Príncipe de Núbia, O Cliente, Tigre de carvão, Mr.Onkwonko, Rei dos Mortos."
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": "Tem curiosidade de saber quem são os seus autores?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_19_1599154104985",
+      "conditions": "@dados:aliases",
+      "dialog_node": "node_21_1599154104990",
+      "previous_sibling": "node_20_1599154104990"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Então... a Capitã Marvel também é conhecida como: Carol Susan Jane Danvers, Ace, Binária, Senhora Marvel, Warbird (ave de guerra), Miss Marvel, Catherine Donovan, Diretora Danvers, Cheeseburger, Carol Daniels, Karolya Danilovska, Catherine Donovan."
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": "Tem curiosidade de saber quem são os seus autores?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1598732408621",
+      "conditions": "@dados:aliases",
+      "dialog_node": "node_2_1598810522871",
+      "previous_sibling": "node_1_1598810493435"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_7_1598810589098",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1598732408621"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_2_1599152856865",
+      "previous_sibling": "node_9_1599152855188"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_9_1598810616062",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_10_1598810636246"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_2_1599153129098"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_10_1598810636246",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1598810522871"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_2_1599153302850"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_169_1599186561821",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_19_1599154104985"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_2_1599190267248"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_21_1599154104990",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_24_1599154104990"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_22_1599154104990"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_21_1599154104990",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_19_1599154104985"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_23_1599154104990",
+      "previous_sibling": "node_22_1599154104990"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ah! Os autores são: Stan Lee, Jack Kirby"
+              },
+              {
+                "text": "Quer conhecer quais as características do Pantera Negra?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_19_1599154104985",
+      "conditions": "@dados:autores",
+      "dialog_node": "node_24_1599154104990",
+      "previous_sibling": "node_21_1599154104990"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_24_1599154104990",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_27_1599154104990"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_25_1599154104990"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_24_1599154104990",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_19_1599154104985"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_26_1599154104990",
+      "previous_sibling": "node_25_1599154104990"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Sexo: Masculino\nAltura: 1.83 m\nPeso: 91 kg\nOlhos: Castanhos\nCabelo: Preto"
+              },
+              {
+                "text": "Olha eu tenho a informação da formação que ele tem. Quer saber?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_19_1599154104985",
+      "conditions": "@dados:caracteristicas",
+      "dialog_node": "node_27_1599154104990",
+      "previous_sibling": "node_24_1599154104990"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_27_1599154104990",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_30_1599154104990"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_28_1599154104990"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_27_1599154104990",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_19_1599154104985"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_29_1599154104990",
+      "previous_sibling": "node_28_1599154104990"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ohh! Como parte de sua educação, tem: Ph.D em Física da Universidade de Oxford Engenharia, Economia, Ciência Política e Psicologia"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": "Tem interesse em saber qual é espécie dele?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_19_1599154104985",
+      "conditions": "@dados:educacao",
+      "dialog_node": "node_30_1599154104990",
+      "previous_sibling": "node_27_1599154104990"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_30_1599154104990",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_33_1599154104990"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_31_1599154104990"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ohh! Como parte de sua educação, tem: Treinamento militar e técnicas de espionagem, Bacharel em Ciências adquirido enquanto nas forças armadas."
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": "Tem interesse em saber qual é espécie dela?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1598732408621",
+      "conditions": "@dados:educacao",
+      "dialog_node": "node_3_1598810539008",
+      "previous_sibling": "node_13_1599147676584"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_30_1599154104990",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_19_1599154104985"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_32_1599154104990",
+      "previous_sibling": "node_31_1599154104990"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ahh! Ele é humano místicamente aprimorado."
+              },
+              {
+                "text": "Quer conhecer quem são os seus parentes?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_19_1599154104985",
+      "conditions": "@dados:especie",
+      "dialog_node": "node_33_1599154104990",
+      "previous_sibling": "node_30_1599154104990"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_33_1599154104990",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_36_1599154104990"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_34_1599154104990"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_33_1599154104990",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_19_1599154104985"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_35_1599154104990",
+      "previous_sibling": "node_34_1599154104990"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Olha... os parentes conhecidos são: Bashenga (ancestral paterno, falecido); Azzuri, o Sábio (avô paterno, falecido); Nanali (avó paterna, falecida); Chanda (avô paterno, presumivelmente falecido); T'Chaka (pai, falecido); S'Yan (tio, falecido); N'Yami (mãe, falecida);\nRamonda (madrasta); N'Baza (tio); Hunter (irmão adotivo); Jakarra (meio-irmão); Shuri (meia-irmã); Joshua Itobo (cousin); Khanata (primo); Ishanta (primo); Zuni (primo); M'Koni (primo); T'Shan (primo); Wheeler (primo por casamento, falecido); Billy Wheeler (primeiro primo uma vez removido); Kwezi Dzana (sobrinho); Tempestade (Ororo Munroe) (ex-esposa, casamento anulado)"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": "E os grupos que ele faz parte. Você tem interesse?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_19_1599154104985",
+      "conditions": "@dados:familia",
+      "dialog_node": "node_36_1599154104990",
+      "previous_sibling": "node_33_1599154104990"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_36_1599154104990",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_39_1599154104990"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_37_1599154104990"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_36_1599154104990",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_19_1599154104985"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_38_1599154104990",
+      "previous_sibling": "node_37_1599154104990"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Pantera Negra possui afiliações com:  Taifa Ngao, Culto do Pantera, Tripulação, Supremos; anteriormente Conselho de Governadores da Tropa Alfa, Illuminati, Vingadores, Quarteto Fantástico, Força Fantástica, Defensores, Vingadores Secretos (Guerra Civil); patrocinador de Mutantes Sem Fronteiras; aliado dos Cavaleiros de Pendragon"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": "Agora que você já sabe quem são os amigos. Que tal conhecer seu inimigos?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_19_1599154104985",
+      "conditions": "@dados:grupos",
+      "dialog_node": "node_39_1599154104990",
+      "previous_sibling": "node_36_1599154104990"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ahh! Ela é hibrida de humanos e krees"
+              },
+              {
+                "text": "Quer conhecer quem são os parentes dela?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1598732408621",
+      "conditions": "@dados:especie",
+      "dialog_node": "node_40_1598817106661",
+      "previous_sibling": "node_3_1598810539008"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_39_1599154104990",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_42_1599154104990"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_40_1599154104990"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eita! Os seus inimigos são: Ghazi Rashid, Ronan, o Acusador, a Inteligência Suprema, Yon-Rogg, a Dra. Minerva e a Dra. Eve. Deathbird of the Shi'ar, Mystique, MODOK e Moonstone"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": "Talvez você já saiba, mas quer saber onde ela nasceu?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1598732408621",
+      "conditions": "@dados:inimigos",
+      "dialog_node": "node_41_1598817145713",
+      "previous_sibling": "node_5_1598810565365"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_39_1599154104990",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_19_1599154104985"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_41_1599154104990",
+      "previous_sibling": "node_40_1599154104990"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Olha... os parentes conhecidos são: Marie Danvers (mãe), Joseph Danvers (pai, falecido), Joeseph Danvers Jr. (irmão), Steven \"Steve\" Danvers (irmão, falecido), Benny (tio)."
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": "E os grupos que ela faz parte. Você tem interesse?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1598732408621",
+      "conditions": "@dados:familia",
+      "dialog_node": "node_4_1598810554990",
+      "previous_sibling": "node_40_1598817106661"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_1_1599141531705",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1598732408621"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_4_1599147423275",
+      "previous_sibling": "node_7_1599147420093"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_40_1598817106661",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1598810554990"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_4_1599151579060"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_8_1598810605095",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_7_1598810589098"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_4_1599152622354"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_8_1598810605095",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1598732408621"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_4_1599152624131",
+      "previous_sibling": "node_4_1599152622354"
+    },
+    {
+      "type": "standard",
+      "title": "Agradecimento",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok! Estou à sua disposição."
+              },
+              {
+                "text": "Imagina! Estou ao seu dispor."
+              },
+              {
+                "text": "Disponha! Estou às suas ordens."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#agradecer",
+      "dialog_node": "node_4_1599158480346",
+      "previous_sibling": "node_1_1598803098659"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_16_1599150167816",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_11_1598738849037"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_4_1599189895312",
+      "previous_sibling": "node_6_1599189892944"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eita! Os seus inimigos são: Ghazi Rashid, Ronan, o Acusador, a Inteligência Suprema, Yon-Rogg, a Dra. Minerva e a Dra. Eve. Deathbird of the Shi'ar, Mystique, MODOK e Moonstone"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": "Talvez você já saiba, mas quer saber onde ele nasceu?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_19_1599154104985",
+      "conditions": "@dados:inimigos",
+      "dialog_node": "node_42_1599154104990",
+      "previous_sibling": "node_39_1599154104990"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_42_1599154104990",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_45_1599154104990"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_43_1599154104990"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_42_1599154104990",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_19_1599154104985"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_44_1599154104990",
+      "previous_sibling": "node_43_1599154104990"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Seu local de origem é em Wakanda, África."
+              },
+              {
+                "text": "Sabia que ele tem várias ocupações. Quer saber?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_19_1599154104985",
+      "conditions": "@dados:local",
+      "dialog_node": "node_45_1599154104990",
+      "previous_sibling": "node_42_1599154104990"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_45_1599154104990",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_48_1599154104990"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_46_1599154104990"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_45_1599154104990",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_19_1599154104985"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_47_1599154104990",
+      "previous_sibling": "node_46_1599154104990"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ah sim! Rei da Necrópole, Rei de Wakanda e Chefe do Clã Pantera, cientista, aventureiro; ex-professor, vigilante e protetor de Hell's Kitchen"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": "Bom, você quer saber quais as suas bases de operações que ele também faz parte?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_19_1599154104985",
+      "conditions": "@dados:ocupacoes",
+      "dialog_node": "node_48_1599154104990",
+      "previous_sibling": "node_45_1599154104990"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_48_1599154104990",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_51_1599154104990"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_49_1599154104990"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_48_1599154104990",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_19_1599154104985"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_50_1599154104990",
+      "previous_sibling": "node_49_1599154104990"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Legal! Suas bases de operações são: Necrópole, Wakanda; Embaixada Wakandana, Manhattan, Cidade de Nova Iorque, Nova Iorque; anteriormente Hell's Kitchen, Manhattan, Cidade de Nova Iorque, Nova Iorque"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": "Que tal sobre a origem dele. Você quer saber?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_19_1599154104985",
+      "conditions": "@dados:operacoes",
+      "dialog_node": "node_51_1599154104990",
+      "previous_sibling": "node_48_1599154104990"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Capitã Marvel possui afiliações: Força Aérea dos EUA, NASA, X-Men, Piratas Espaciais, Vingadores, Poderosos Vingadores, Novos Vingadores, Tropa Alfa, A-Force."
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": "Agora que você já sabe quem são os amigos. Que tal conhecer seu inimigos?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1598732408621",
+      "conditions": "@dados:grupos",
+      "dialog_node": "node_5_1598810565365",
+      "previous_sibling": "node_4_1598810554990"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ah sim! Comandante da Programa Espacial Tropa Alfa; ex-aventureira, anteriormente uma agente da S.H.I.E.L.D., agente de inteligência e capitão da Força Aérea dos EUA,[8] piloto, chefe de segurança da NASA, editora da Revista Mulher, autora, escritora freelance, líder de campo do Departamento de Segurança Nacional dos Estados Unidos, instrutora no programa \"Dia de Treinamento\", vendedora (Nota:O trabalho de inteligência de Carol exigia que ela afirmasse estar trabalhando para várias agências, incluindo o C.I.A., o Departamento de Defesa e a Agência de Inteligência de Defesa. Embora ela tenha trabalhado com muitas destas agências, ela era uma empregada da Força Aérea Americana)"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": "Bom, você quer saber quais as bases de operações que ela também faz parte?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1598732408621",
+      "conditions": "@dados:ocupacoes",
+      "dialog_node": "node_5_1599144024714",
+      "previous_sibling": "node_6_1598810575293"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_3_1598810539008",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_40_1598817106661"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_5_1599151283902"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_6_1598810575293",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1598732408621"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_5_1599152402682",
+      "previous_sibling": "node_10_1599152400893"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_51_1599154104990",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_54_1599154104990"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_52_1599154104990"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_51_1599154104990",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_19_1599154104985"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_53_1599154104990",
+      "previous_sibling": "node_52_1599154104990"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Certo! Antes de se tornar a Pantera, T'Challa era simplesmente o filho do rei de Wakanda, T'Chaka, um antigo Pantera Negra. Infelizmente, seu pai entrou em conflito com Ulysses Klaw, obcecado por Vibranium, que acabou provocando a morte do rei. T'Challa viajaria o mundo e estudaria nas melhores universidades, uma jornada que também o unia a Ororo Munroe, a jovem que se tornaria Storm. Ao retornar à sua terra natal, T'Challa secretamente participou do desafio aberto ao atual Pantera Negra - seu tio S'Yan - e o derrotou. Ao revelar sua verdadeira identidade, o país reagiu primeiro com choque e depois com adulação quando ele assumiu seu lugar de direito na comunidade. Assim T'Challa ganhou o papel de Rei de Wakanda e o título da Pantera Negra. Ele consumiu a Erva em Forma de Coração para aprimorar suas habilidades."
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": "Ah! Agora garanto que queira saber quais os seus poderes. Correto?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_19_1599154104985",
+      "conditions": "@dados:origem",
+      "dialog_node": "node_54_1599154104990",
+      "previous_sibling": "node_51_1599154104990"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_54_1599154104990",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_57_1599154104990"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_55_1599154104990"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_54_1599154104990",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_19_1599154104985"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_56_1599154104990",
+      "previous_sibling": "node_55_1599154104990"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Bom... os seus poderes são: Conhecimento do Pantera Negra, Força Sobre-Humana, Resistência Sobre-Humana, Agilidade Sobre-Humana, Reflexos Sobre-Humanos, Velocidade Sobre-Humana, Durabilidade Sobre-Humana, Vígor Super-Humano, Sentidos Aguçados, Fator de Cura Acelerado, Consciência Hiper-Cósmica."
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": "Bom! Você também tem curiosidades sobre como é o trajes, armaduras e armas?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_19_1599154104985",
+      "conditions": "@dados:poderes",
+      "dialog_node": "node_57_1599154104990",
+      "previous_sibling": "node_54_1599154104990"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_57_1599154104990",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_60_1599154104990"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_58_1599154104990"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_57_1599154104990",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_19_1599154104985"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_59_1599154104990",
+      "previous_sibling": "node_58_1599154104990"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Humm! Possui Garras retráteis e seu traje de Vibranium é um uniforme e máscara na preta.  "
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": "Enfim! Quer conhecer de qual universo ele pertence?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_19_1599154104985",
+      "conditions": "@dados:trajes",
+      "dialog_node": "node_60_1599154104990",
+      "previous_sibling": "node_57_1599154104990"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_60_1599154104990",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_63_1599154104991"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_61_1599154104990"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Seu local de origem é em Boston, Massachusetts"
+              },
+              {
+                "text": "Sabia que ela tem várias ocupações. Quer saber?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1598732408621",
+      "conditions": "@dados:local",
+      "dialog_node": "node_6_1598810575293",
+      "previous_sibling": "node_41_1598817145713"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_5_1599144024714",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1598732408621"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_6_1599146108158",
+      "previous_sibling": "node_10_1599145994756"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_4_1598810554990",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1598810565365"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_6_1599151726982"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_5_1598810565365",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1598732408621"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_6_1599151845107",
+      "previous_sibling": "node_7_1599151843146"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_16_1599150167816",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1598732408621"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_6_1599189892944"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_17_1599150413426",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_69_1599158501750"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_6_1599190365225"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_60_1599154104990",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_19_1599154104985"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_62_1599154104991",
+      "previous_sibling": "node_61_1599154104990"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Universo Marvel, Terra-616"
+              },
+              {
+                "text": "Ei! Ele possui outros codnomes. Quer saber mais?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_19_1599154104985",
+      "conditions": "@dados:universo",
+      "dialog_node": "node_63_1599154104991",
+      "previous_sibling": "node_60_1599154104990"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_63_1599154104991",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_21_1599154104990"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_64_1599154104991"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_63_1599154104991",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_19_1599154104985"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_65_1599154104991",
+      "previous_sibling": "node_64_1599154104991"
+    },
+    {
+      "type": "frame",
+      "title": "Iron Man",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok! O que mais quer saber sobre o Homem de Ferro?"
+              },
+              {
+                "text": "Certo! Qual curiosidade a mais que queira saber sobre o Homem de Ferro?"
+              },
+              {
+                "text": "Legal! Qual o interesse a mais sobre o Homem de Ferro?"
+              },
+              {
+                "text": "Ahh! Que informação a mais deseja sobre o Homem de Ferro?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "@character:iron_man",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_69_1599158501750",
+      "previous_sibling": "node_19_1599154104985"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_69_1599158501750",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1598803098659"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_70_1599158501756",
+      "previous_sibling": "slot_116_1599158501756"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Então... o Homem de Ferro também é conhecido como: Anthony Edward \"Tony\" Stark, Shellhead, Golden Avenger, Tetsujin, Ex-Crimson Dynamo, Ex-Iron Knight, Ex Hogan Potts, Ex Randall Pierce, Ex Spare Parts Man, Ex-Homem Cobalto personificado (Ralph Roberts). Gladiador Dourado, Cabeça de Bala, Vingador de Ouro, Cabeça de Lata, Vingador Armadurado, Homem de Peças de Reposição, Dínamo Vermelho, Anthony de York, Cavalheiro de Ferro, Homem de Metal, Homem do Ferro, Tin Man, O Engenheiro, Mestre das Máquinas, Cavaleiro-Espacial, Richard Franco, Martini, \"Porco de Ferro\"."
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": "Tem curiosidade de saber quem são os seus autores?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_69_1599158501750",
+      "conditions": "@dados:aliases",
+      "dialog_node": "node_71_1599158501756",
+      "previous_sibling": "node_70_1599158501756"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Bom... os seus poderes são: Força Sobre-Humana, Vigor Sobre-Humano, Durabilidade Sobre-Humana, Agilidade Sobre-Humana, Reflexos Sobre-Humanos, Vôo, Vôo Espacial, Consciência Cósmica, Manipulação Regenerativa, Imunidade Contaminante, Imortalidade Convencional, Manipulação de Energia, Absorção de Energia, Explosões Fotônicas, Manipulação Molecular, Transmutação de Matéria, Criação de Construção de Energia, Auto Sustento."
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": "Bom! Você também tem curiosidades sobre como é o trajes, armaduras e armas?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1598732408621",
+      "conditions": "@dados:poderes",
+      "dialog_node": "node_7_1598810589098",
+      "previous_sibling": "node_8_1598810605095"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_1_1599141531705",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_13_1599147676584"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_7_1599147420093"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_3_1598810539008",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1598732408621"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_7_1599151288360",
+      "previous_sibling": "node_5_1599151283902"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_5_1598810565365",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_41_1598817145713"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_7_1599151843146"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_10_1598810636246",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1598732408621"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_7_1599153304320",
+      "previous_sibling": "node_2_1599153302850"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_17_1599150413426",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_11_1598738849037"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_7_1599190367288",
+      "previous_sibling": "node_6_1599190365225"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_18_1599150479592",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_11_1598738849037"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_7_1599190463689",
+      "previous_sibling": "node_9_1599190461535"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_71_1599158501756",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_74_1599158501756"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_72_1599158501756"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_71_1599158501756",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_69_1599158501750"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_73_1599158501756",
+      "previous_sibling": "node_72_1599158501756"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ah! Os seus autores são: Stan Lee, Larry Lieber, Don Heck, Jack Kirby"
+              },
+              {
+                "text": "Quer conhecer quais as características do Homem de Ferro?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_69_1599158501750",
+      "conditions": "@dados:autores",
+      "dialog_node": "node_74_1599158501756",
+      "previous_sibling": "node_71_1599158501756"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_74_1599158501756",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_77_1599158501756"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_75_1599158501756"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_74_1599158501756",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_69_1599158501750"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_76_1599158501756",
+      "previous_sibling": "node_75_1599158501756"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Sexo: Masculino\nAltura: 1,85 m (Sem a Armadura) 1,98 m (Com a Armadura)\nPeso: 102 kg (Sem a Armadura) 193 kg (Com a Armadura)\nOlhos: Azuis\nCabelo: Preto"
+              },
+              {
+                "text": "Olha eu tenho a informação da formação que ele tem. Quer saber?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_69_1599158501750",
+      "conditions": "@dados:caracteristicas",
+      "dialog_node": "node_77_1599158501756",
+      "previous_sibling": "node_74_1599158501756"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_77_1599158501756",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_80_1599158501756"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_78_1599158501756"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_77_1599158501756",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_69_1599158501750"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_79_1599158501756",
+      "previous_sibling": "node_78_1599158501756"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ohh! Como parte de sua educação, tem: Múltiplos PhDs em física, engenharia mecânica e engenharia elétrica"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": "Tem interesse em saber qual é espécie dele?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_69_1599158501750",
+      "conditions": "@dados:educacao",
+      "dialog_node": "node_80_1599158501756",
+      "previous_sibling": "node_77_1599158501756"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_80_1599158501756",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_83_1599158501756"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_81_1599158501756"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Certo! A ex-piloto da Força Aérea e agente de inteligência Carol Danvers perseguiu seu sonho de exploração espacial como funcionária da NASA, mas sua vida mudou para sempre quando ela foi acidentalmente transformada em um híbrido humano-Kree com poderes extraordinários ao invejar subconscientemente os poderes de Mar-Vell qaundo foi exposta ao Psyche-Magnitron, um dispositivo Kree que poderia transformar a imaginação em realidade. Isto aconteceu durante uma batalha entre o heróico Mar-Vell e seu rival, Yon-Rogg. Seu início de carreira foi interrompido quando Rogue, um membro da Irmandade dos Mutantes do Mal, atacou Carol e drenou permanentemente seus poderes e memórias. Demorou anos para Carol se recuperar de sua provação, mas ela finalmente realizou seu sonho de explorar o espaço e viajou para longe da Terra. Carol até se tornou cosmicamente fortalecida e assumiu o codinome Binário. Os poderes binários desapareceram com o tempo, deixando Carol com a maioria de suas habilidades originais. Carol voltou para a Terra e se juntou aos Vingadores. Anos mais tarde, Carol adotou o codinome Capitão Marvel como uma homenagem a seu amigo e mentor caído. "
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": "Ah! Agora garanto que queira saber quais os seus poderes. Correto?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1598732408621",
+      "conditions": "@dados:origem",
+      "dialog_node": "node_8_1598810605095",
+      "previous_sibling": "node_10_1599146390773"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_41_1598817145713",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1598732408621"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_8_1599152186811",
+      "previous_sibling": "node_9_1599152184966"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_9_1598810616062",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1598732408621"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_8_1599153130722",
+      "previous_sibling": "node_2_1599153129098"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_80_1599158501756",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_69_1599158501750"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_82_1599158501756",
+      "previous_sibling": "node_81_1599158501756"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ahh! Ele é humano usando super trajes."
+              },
+              {
+                "text": "Quer conhecer quem são os seus parentes?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_69_1599158501750",
+      "conditions": "@dados:especie",
+      "dialog_node": "node_83_1599158501756",
+      "previous_sibling": "node_80_1599158501756"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_83_1599158501756",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_86_1599158501756"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_84_1599158501756"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_83_1599158501756",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_69_1599158501750"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_85_1599158501756",
+      "previous_sibling": "node_84_1599158501756"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Olha... os parentes conhecidos são: saac Stark (ancestral adotivo); Howard Stark, Sr. (avô adotivo paterno, falecido); Amanda Armstrong (mãe biológica); Jude (pai biológico); Howard Anthony Stark (pai adotivo, falecido); Maria Stark (mãe adotiva, falecida); Arno Stark (irmão adotivo); Edward Stark (tio adotivo, falecido); Morgan Stark (prima adotivo)."
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": "E os grupos que ele faz parte. Você tem interesse?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_69_1599158501750",
+      "conditions": "@dados:familia",
+      "dialog_node": "node_86_1599158501756",
+      "previous_sibling": "node_83_1599158501756"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_86_1599158501756",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_89_1599158501756"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_87_1599158501756"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_86_1599158501756",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_69_1599158501750"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_88_1599158501756",
+      "previous_sibling": "node_87_1599158501756"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Homem de Ferro possui afiliações com:  Anteriormente Indústrias Stark (CEO), Os Vingadores, Vingadores (Heróis Renascem), Illuminati, Eixo, Resiliente, S.H.I.E.L.D., Guardiões da Galáxia, Iniciativa (líder), Pro-Registração da Unidade de Superheróis, Novos Vingadores, Os Poderosos Vingadores, Clube do Inferno, Força de Trabalhos, Vingadores da Costa Oeste, Departamento de Defesa dos Estados Unidos, o Poderoso, Cavaleiros da Mesa Redonda Atômica, Alcoólicos Anônimos, Controle de Dano"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": "Agora que você já sabe quem são os amigos. Que tal conhecer seu inimigos?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_69_1599158501750",
+      "conditions": "@dados:grupos",
+      "dialog_node": "node_89_1599158501756",
+      "previous_sibling": "node_86_1599158501756"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_89_1599158501756",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_92_1599158501756"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_90_1599158501756"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_89_1599158501756",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_69_1599158501750"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_91_1599158501756",
+      "previous_sibling": "node_90_1599158501756"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Humm! Ela não possui armas ou armaduras, mas seu traje é um uniforme na cores azul e vermelho. Em sua forma mais poderosa exibe um traje nas cores: preto, branco e dourado. "
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": "Enfim! Quer conhecer de qual universo ela pertence?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_1_1598732408621",
+      "conditions": "@dados:trajes",
+      "dialog_node": "node_9_1598810616062",
+      "previous_sibling": "node_7_1598810589098"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_2_1598810522871",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1598732408621"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_9_1599147230204",
+      "previous_sibling": "node_1_1599147227724"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_41_1598817145713",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_6_1598810575293"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_9_1599152184966"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_7_1598810589098",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_9_1598810616062"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_9_1599152855188"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_18_1599150479592",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_119_1599160625080"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_9_1599190461535"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eita! os seus inimigos são: Dínamo Escarlate, Homem de Titânio, Mandarim , Wong-Chu, Obadiah Stane, Justin Hammer "
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": "Talvez você já saiba, mas quer saber onde ele nasceu?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_69_1599158501750",
+      "conditions": "@dados:inimigos",
+      "dialog_node": "node_92_1599158501756",
+      "previous_sibling": "node_89_1599158501756"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_92_1599158501756",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_95_1599158501756"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_93_1599158501756"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_92_1599158501756",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_69_1599158501750"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_94_1599158501756",
+      "previous_sibling": "node_93_1599158501756"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Seu local de origem é Sofia, Bulgária. Ele tem cidadania americana e reside atualmente em Long Island, New York."
+              },
+              {
+                "text": "Sabia que ele tem várias ocupações. Quer saber?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_69_1599158501750",
+      "conditions": "@dados:local",
+      "dialog_node": "node_95_1599158501756",
+      "previous_sibling": "node_92_1599158501756"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_95_1599158501756",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_98_1599158501756"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_96_1599158501756"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_95_1599158501756",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_69_1599158501750"
+      },
+      "conditions": "@simenao:nao",
+      "dialog_node": "node_97_1599158501756",
+      "previous_sibling": "node_96_1599158501756"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ah sim! Rei Engenheiro Mecânico, Aventureiro, Super-Herói, Inventor, Industrialista, fundador da Fundação Maria Stark, CEO da Indústrias Stark, Presidente emérito de Resiliente; antiga ligação entre S.H.I.E.L.D. e os Vingadores, Secretário de Defesa dos Estados Unidos, Diretor Executivo da S.H.I.E.L.D., CEO da Soluções Stark, Circuits Maximus e Stark Internacional."
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": "Bom, você quer saber quais as suas bases de operações que ele também faz parte?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_69_1599158501750",
+      "conditions": "@dados:ocupacoes",
+      "dialog_node": "node_98_1599158501756",
+      "previous_sibling": "node_95_1599158501756"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_98_1599158501756",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_101_1599158501756"
+      },
+      "conditions": "@simenao:sim",
+      "dialog_node": "node_99_1599158501756"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_69_1599158501750",
+      "variable": "$character",
+      "dialog_node": "slot_116_1599158501756"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_119_1599160625080",
+      "variable": "$character",
+      "dialog_node": "slot_166_1599160625084"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1598732408621",
+      "variable": "$character",
+      "dialog_node": "slot_2_1598814005044"
+    },
+    {
+      "type": "slot",
+      "parent": "node_11_1598738849037",
+      "variable": "$character",
+      "dialog_node": "slot_2_1599248802853",
+      "previous_sibling": "handler_7_1598807997638"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1598803098659",
+      "variable": "$character",
+      "dialog_node": "slot_5_1599163649486",
+      "previous_sibling": "handler_3_1599163803486"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_19_1599154104985",
+      "variable": "$character",
+      "dialog_node": "slot_66_1599154104991"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "Você quis dizer:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "Nenhuma das anteriores"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Você quis dizer:"
+    }
+  },
+  "learning_opt_out": false,
+  "name": "Marvel_Characters",
+  "language": "pt-br",
+  "description": "Skill para responder curiosidades de alguns personsagens da marvel."
+}
